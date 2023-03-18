@@ -2,4 +2,5 @@
 My Portfolio Site :
 https://rahuldutta.netlify.app
 
-[![Netlify Status](https://api.netlify.com/api/v1/badges/4c623c77-a0de-4878-a05a-c31992742984/deploy-status)](https://rahuldutta.netlify.app/)
+
+[![Netlify Status](https://api.netlify.com/api/v1/badges/b51cda4b-b275-4e47-9282-ca77bc07e1da/deploy-status)](https://rahuldutta.netlify.app)
