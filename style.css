@@ -1,15 +1,11 @@
 /* Created By Rahul Dutta */
 
-/*  import google fonts */
-@import url('https://fonts.googleapis.com/css2?family=Capriola&display=swap');
-
 * {
   margin: 0;
   padding: 0;
   box-sizing: border-box;
   text-decoration: none;
   font-family: 'Capriola', sans-serif;
-  /* transition: all 0.3s ease; */
 }
 
 i{
