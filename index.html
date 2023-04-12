@@ -28,7 +28,7 @@
     <title>Rahul-Dutta/portfolio</title>
 
     <!-- fav icon  -->
-    <link rel="shortcut icon" type="image/png" href="https://d.img.vision/irahuldutta02/rd-favicon.png"/>
+    <link rel="shortcut icon" type="image/png" href="https://d.img.vision/irahuldutta02/rd-favicon.png" />
 
     <!-- box icons  -->
     <link href='https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css' rel='stylesheet'>
@@ -59,7 +59,7 @@
     <nav class="navbar">
         <div class="max-width">
             <div class="logo">
-                <a href="#">Rahul Dutta<span>/portfolio</span></a>
+                <a href="#">Rahul <span>Dutta</span></a>
             </div>
             <ul class="menu">
                 <li><a href="#about" class="menu-btn">About</a></li>
@@ -78,9 +78,9 @@
     <section class="home" id="home">
         <div class="max-width">
             <div class="home-content">
-                <div class="text-1">Hello, my name is</div>
+                <div class="text-1">Hello, I'm</div>
                 <div class="text-2">Rahul Dutta</div>
-                <div class="text-3">And I'm a <span class="typing"></span></div>
+                <div class="text-3">A <span class="typing"></span></div>
                 <a class="home-botton" href="files/resume-rahul-dutta-8967.pdf" target="_blank">Resume <i
                         class='bx bxs-down-arrow-circle bx-tada'></i></a>
                 <a class="home-botton" href="https://rahuldutta.bio.link/" target="_blank">My Links <i
@@ -95,7 +95,7 @@
             <h2 class="title">About me</h2>
             <div class="about-content">
                 <div class="column left">
-                    <img src="https://d.img.vision/irahuldutta02/rahul-dutta-gd-bg-1mb.png" alt="Rahul Dutta">
+                    <img src="https://d.img.vision/irahuldutta02/rahuldutta-dp-3.jpg" alt="Rahul Dutta">
                 </div>
                 <div class="column right">
                     <div class="text">I'm Rahul and I'm a <span class="typing-2"></span></div>
@@ -126,8 +126,10 @@
                                 src="https://github.com/irahuldutta02/dynamic-images/raw/main/icons/facebook-icon-round.png?raw=true"
                                 alt="Facebook-@irahuldutta02"></a>
                     </div>
-
-                    <a class="about-botton" href="#contact">Hire me <i class='bx bxs-hand-down bx-fade-down'></i> </a>
+                    <div class="about-hireme-btn">
+                        <a class="about-botton" href="#contact">Hire me <i class='bx bxs-hand-down bx-fade-down'></i>
+                        </a>
+                    </div>
 
                 </div>
             </div>
@@ -259,9 +261,9 @@
 
                 <div class="box">
                     <i class="fas fa-graduation-cap"></i>
-                    <span>2020-23</span>
+                    <span>2023</span>
                     <h3>GRADUATION</h3>
-                    <p>Bachelors's in Computer Application, <br> FROM : <a target="_blank"
+                    <p>Bachelors of Computer Application, <br> FROM : <a target="_blank"
                             href="https://makautwb.ac.in/">Maulana Abul Kalam Azad University Of Technology, West
                             Bengal</a>
                     </p>
@@ -343,7 +345,7 @@
         <h3>choose color</h3>
 
         <div class="buttons">
-            <div class="theme-btn" style="background: #1ac4ff;"></div>
+            <div class="theme-btn" style="background: #AC6530;"></div>
             <div class="theme-btn" style="background: #f7b731;"></div>
             <div class="theme-btn" style="background: #ff0033;"></div>
             <div class="theme-btn" style="background: #20bf6b;"></div>
@@ -395,9 +397,10 @@
 
     <!-- document last modified  -->
     <script>
-        var dateTime = document.lastModified;
-        var date = dateTime.substr(0, 10);
-        document.getElementById("last-modified").innerHTML = date;
+        var lastUpdated = new Date(document.lastModified);
+        var options = { year: 'numeric', month: 'long', day: 'numeric'};
+        var formattedDate = lastUpdated.toLocaleString('en-US', options);
+        document.getElementById('last-modified').innerHTML = formattedDate;
     </script>
 
 

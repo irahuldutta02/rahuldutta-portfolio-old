@@ -21,7 +21,7 @@ html {
 }
 
 :root {
-  --color: #1ac4ff;
+  --color: #AC6530;
   --color-2: #111;
 }
 
@@ -77,7 +77,7 @@ footer {
   display: flex;
   flex-wrap: wrap;
   align-items: center;
-  justify-content: space-between;
+  justify-content: center;
 }
 
 section .title {
@@ -300,7 +300,7 @@ section .title::after {
 }
 
 .about .about-content .left img:hover{
-  Box-Shadow: Rgba(0, 0, 0, 0.5) 0px 5px 15px;
+  Box-Shadow: rgba(0, 0, 0, 0.5) 0px 5px 15px;
   cursor: pointer;
 }
 
@@ -325,7 +325,8 @@ section .title::after {
 /* social icons  */
 .about-social-icons{
   display: flex;
-  height: 60px;
+  flex-wrap: wrap;
+  height: fit-content;
 }
 
 .about-social-icons a{
@@ -336,13 +337,16 @@ section .title::after {
   height: 50px;
   width: 50px;
   border-radius: 50%;
-  transition: width 0.5s, height 0.5s;
+  transition: all 0.3s ease;
 }
 
 .about-social-icons a img:hover{
-  height: 60px;
-  width: 60px;
+  Box-Shadow: rgba(0, 0, 0, 0.5) 0px 5px 15px;
+  cursor: pointer;
+
 }
+
+
 /* social icons  */
 
 .about .about-content .right .about-botton {
@@ -393,7 +397,7 @@ section .title::after {
   border-radius: 6px;
   padding: 50px 25px;
   cursor: pointer;
-  transition: all 0.3s ease;
+  transition: all 0.5s ease;
   height: 300px;
   width: 350px;
   margin: 10px;
@@ -436,7 +440,7 @@ section .title::after {
 .skills .skills-content .column {
   width: calc(50% - 30px);
   text-align: center;
-  height: 200px;
+  min-height: 200px;
 }
 
 .skills .skills-content .left .text {
@@ -530,19 +534,32 @@ section .title::after {
 .background .box-container {
   display: flex;
   align-items: center;
-  justify-content: space-between;
+  justify-content: center;
   flex-wrap: wrap;
   padding: 1rem 0;
   padding-left: 3rem;
 }
 
 .background .box-container .box {
-  width: 27rem;
-  margin: 2rem 1rem;
-  padding-left: 4rem;
+  min-width: 18rem;
+  max-width: 25rem;
+  height: fit-content;
+  min-height: 15rem;
+  margin: 2rem;
+  padding: 0 2rem 0 3rem;
+  padding-bottom: 2rem;
   border-left: 0.2rem solid #fff;
   position: relative;
+  border: 3px solid var(--color);
+  border-radius: 30px;
+  transition: all 0.3s ease;
 }
+
+.background .box-container .box:hover{
+  Box-Shadow: var(--color) 0px 5px 15px;
+  cursor: pointer;
+}
+
 
 .background .box-container .box span {
   font-size: 1.3rem;
@@ -550,6 +567,9 @@ section .title::after {
   color: #fff;
   border-radius: 5rem;
   padding: 0.5rem 2.5rem;
+  position: relative;
+  top: -1rem;
+  left: 1rem;
 }
 
 .background .box-container .box h3 {
@@ -561,20 +581,11 @@ section .title::after {
 .background .box-container .box p {
   font-size: 1rem;
   color: #eee;
-  padding: 1rem 0;
+  padding: 10px;
 }
 
 .background .box-container .box p a {
   color: var(--color);
-}
-
-.background .box-container .box p a::after {
-  content: "";
-  width: 0px;
-  height: 15px;
-  display: block;
-  background: var(--color);
-  transition: 300ms;
 }
 
 .background .box-container .box p a:hover:after {
@@ -583,7 +594,7 @@ section .title::after {
 
 .background .box-container .box i {
   position: absolute;
-  top: -1.5rem;
+  top: -2.5rem;
   left: -2.5rem;
   height: 5rem;
   width: 5rem;
@@ -709,6 +720,7 @@ section .title::after {
   padding: 3%;
   background: #222;
   color: #fff;
+  border: 2px solid #222;
   border-radius: 10px;
   font-size: larger;
 }
@@ -716,7 +728,7 @@ section .title::after {
 .form-style-6 input[type="submit"]:hover,
 .form-style-6 input[type="button"]:hover {
   background: var(--color);
-  /* box-shadow: 0 0 5px #000000; */
+  Box-Shadow: rgba(0, 0, 0, 0.5) 0px 5px 15px;
   color: #000000;
   cursor: pointer;
 }
@@ -799,6 +811,8 @@ footer span a:hover {
   .home .home-content a {
     font-size: 23px;
     padding: 10px 30px;
+    display: inline-block;
+    width: 13rem;
   }
 
   .max-width {
