@@ -224,7 +224,8 @@ section .title::after {
 /* home section styling */
 .home {
   display: flex;
-  background: url("./images/background.jpg") no-repeat center;
+  /* backgroung image */
+  background: url("https://d.img.vision/irahuldutta02/background.jpg") no-repeat center;
   height: 100vh;
   color: #fff;
   min-height: 500px;
