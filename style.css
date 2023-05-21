@@ -226,10 +226,11 @@ section .title::after {
   background-attachment: fixed;
   font-family: 'Capriola', sans-serif;
 
-  background: url("https://i.postimg.cc/cJtm2gtJ/background.jpg") no-repeat center;
+  background: url("https://d.img.vision/irahuldutta02/background-2.jpg") no-repeat center;
   background-repeat: no-repeat;
   background-size: cover;
   background-position: center center;
+  break-inside: avoid;
 
    /* Eager loading */
    image-rendering: -webkit-optimize-contrast; /* WebKit (Safari/Chrome) */
