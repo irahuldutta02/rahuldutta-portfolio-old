@@ -220,13 +220,19 @@ section .title::after {
 /* home section styling */
 .home {
   display: flex;
-  background: url("https://i.postimg.cc/cJtm2gtJ/background.jpg") no-repeat center;
   height: 100vh;
   color: #fff;
   min-height: 500px;
-  background-size: cover;
   background-attachment: fixed;
   font-family: 'Capriola', sans-serif;
+
+  background: url("https://i.postimg.cc/cJtm2gtJ/background.jpg") no-repeat center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center center;
+
+   /* Eager loading */
+   image-rendering: -webkit-optimize-contrast; /* WebKit (Safari/Chrome) */
 }
 
 .home .max-width {
