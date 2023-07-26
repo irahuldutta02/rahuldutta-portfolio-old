@@ -17,7 +17,7 @@ html {
 }
 
 :root {
-  --color: #2c58be;
+  --color: #fa8231;
   --color-2: #111;
 }
 
@@ -284,7 +284,7 @@ section .title::after {
   font-size: 25px;
   padding: 5px 15px;
   font-weight: 400;
-  border-radius: 6px;
+  border-radius: 3rem;
   border: 2px solid var(--color);
   transition: all 0.3s ease;
 }
@@ -759,7 +759,7 @@ section .title::after {
   background: #222;
   color: #fff;
   border: 2px solid #222;
-  border-radius: 10px;
+  border-radius: 3rem;
   font-size: larger;
 }
 
