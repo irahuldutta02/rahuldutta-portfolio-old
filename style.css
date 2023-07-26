@@ -511,7 +511,7 @@ section .title::after {
   font-weight: 500;
   border-radius: 6px;
   border: 2px solid var(--color);
-  transition: all 0.3s ease;
+  transition: all 0.8s ease;
   width: 150px;
   height: 30px;
 }
