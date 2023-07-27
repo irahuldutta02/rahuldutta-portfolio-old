@@ -435,15 +435,16 @@ section .title::after {
   padding: 50px 25px;
   cursor: pointer;
   transition: all 0.5s ease;
-  height: 300px;
-  width: 350px;
-  margin: 10px;
+  height: 17rem;
+  width: 22rem;
+  margin: 0.7rem;
   display: flex;
   justify-content: center;
   align-items: center;
+  
 }
 
-.services .serv-content .card div{
+.services .serv-content .card div {
   display: flex;
   justify-content: center;
   align-items: center;
@@ -518,6 +519,7 @@ section .title::after {
   transition: all 0.8s ease;
   width: 150px;
   height: 30px;
+
 }
 
 .skills .skills-content .column .inside-coloum div:hover {
@@ -551,99 +553,89 @@ section .title::after {
   align-items: center;
   justify-content: center;
   flex-wrap: wrap;
-  padding: 1rem 0;
-  padding-left: 3rem;
+  gap: 4rem;
 }
 
 .background .box-container .box {
-  min-width: 18rem;
-  max-width: 25rem;
-  height: fit-content;
-  min-height: 15rem;
-  margin: 2rem;
-  padding: 0 2rem 0 3rem;
-  padding-bottom: 2rem;
   border-left: 0.2rem solid #fff;
   position: relative;
   border: 3px solid var(--color);
-  border-radius: 30px;
+  border-radius: 2rem;
   transition: all 0.3s ease;
+
+  /* min-height: 20rem; */
+  max-width: 25rem;
+  padding: 3rem 0.5rem;
+
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  gap: 1rem;
+  /* box-shadow: var(--color) 0px 5px 15px; */
+  box-shadow: 0 0 1rem var(--color);
+
 }
 
-.background .box-container .box:hover {
-  box-shadow: var(--color) 0px 5px 15px;
-  cursor: pointer;
+
+.background .box-container .box .bg-txt-div{
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  gap: 0.5rem;
+  text-align: center;
 }
 
-.background .box-container .box span {
+.background .box-container .box .bg-year-div span {
+  position: absolute;
+  top: -1.2rem;
+  left: 50%;
   font-size: 1.3rem;
-  background: var(--color);
+  background: var(--color-2);
   color: #fff;
+  border: 3px solid var(--color);
   border-radius: 5rem;
   padding: 0.5rem 2.5rem;
-  position: relative;
-  top: -1rem;
-  left: 1rem;
+  box-shadow: 0 0 0.5rem var(--color);
+
 }
 
 .background .box-container .box h3 {
   font-size: 1.5rem;
   color: #fff;
-  padding-top: 1.5rem;
 }
 
 .background .box-container .box p {
   font-size: 1rem;
   color: #eee;
-  padding: 10px;
 }
 
 .background .box-container .box p a {
   color: var(--color);
 }
 
-.background .box-container .box p a:hover:after {
-  width: 100%;
-}
-
-.background .box-container .box i {
+.bg-icon-img-div {
   position: absolute;
   top: -2.5rem;
-  left: -2.5rem;
+  left: 20%;
   height: 5rem;
   width: 5rem;
   border-radius: 50%;
-  line-height: 5rem;
-  text-align: center;
-  font-size: 2rem;
   color: rgb(255, 255, 255);
-  background-color: var(--color);
-}
-
-.bg-icon-img-div{
-  position: absolute;
-  top: -2.5rem;
-  left: -2.5rem;
-  height: 5rem;
-  width: 5rem;
-  /* border: 2px solid var(--color); */
-  border-radius: 50%;
-  line-height: 5rem;
-  text-align: center;
-  font-size: 2rem;
-  color: rgb(255, 255, 255);
-  background-color: var(--color);
+  background-color: var(--color-2);
   display: flex;
   justify-content: center;
   align-items: center;
+  border: 3px solid var(--color);
+  box-shadow: 0 0 0.5rem var(--color);
+
 }
 
-.bg-icon-img-div img{
-  width: 4.5rem;
+.bg-icon-img-div img {
+  width: 4rem;
   border-radius: 50%;
 }
-
-
 
 /* contact section styling */
 .contact .title::after {
@@ -793,7 +785,6 @@ section .title::after {
   font-weight: 500;
   transition: all 0.4s ease;
   width: fit-content;
-
 }
 
 .form-style-6 input[type="submit"]:hover {
@@ -905,7 +896,6 @@ footer span a:hover {
   .services .serv-content .card {
     width: calc(50% - 10px);
   }
-
 
   .skills .skills-content .column,
   .contact .contact-content .column {
