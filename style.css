@@ -281,12 +281,13 @@ section .title::after {
   align-items: center;
   background: var(--color);
   color: #fff;
-  font-size: 25px;
-  padding: 5px 15px;
-  font-weight: 400;
+  font-size: 20px;
+  font-weight: 500;
+  padding: 0.5rem 1.5rem;
   border-radius: 3rem;
   border: 2px solid var(--color);
   transition: all 0.3s ease;
+  width: fit-content;
 }
 
 .home .home-content .home-botton:hover {
@@ -384,14 +385,17 @@ section .title::after {
 /* social icons  */
 
 .about .about-content .right .about-botton {
-  display: inline-block;
+  display: flex;
+  gap: 0.5rem;
+  align-items: center;
   background: var(--color);
   color: #fff;
   font-size: 20px;
   font-weight: 500;
-  padding: 10px 30px;
+  padding: 0.5rem 1.5rem;
   margin-top: 20px;
-  border-radius: 6px;
+  width: fit-content;
+  border-radius: 3rem;
   border: 2px solid var(--color);
   transition: all 0.3s ease;
 }
@@ -616,6 +620,31 @@ section .title::after {
   background-color: var(--color);
 }
 
+.bg-icon-img-div{
+  position: absolute;
+  top: -2.5rem;
+  left: -2.5rem;
+  height: 5rem;
+  width: 5rem;
+  /* border: 2px solid var(--color); */
+  border-radius: 50%;
+  line-height: 5rem;
+  text-align: center;
+  font-size: 2rem;
+  color: rgb(255, 255, 255);
+  background-color: var(--color);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.bg-icon-img-div img{
+  width: 4.5rem;
+  border-radius: 50%;
+}
+
+
+
 /* contact section styling */
 .contact .title::after {
   content: "get in touch";
@@ -685,8 +714,9 @@ section .title::after {
 }
 
 .form-style-6 .text .status {
-  padding: 0.3rem 0.5rem;
-  border-radius: 0.5rem;
+  padding: 0.5rem 1.5rem;
+  width: fit-content;
+  border-radius: 3rem;
   background-color: white;
   display: inline-block;
   animation: pulse 1.5s infinite;
@@ -752,19 +782,21 @@ section .title::after {
   resize: vertical;
 }
 
-.form-style-6 input[type="submit"],
-.form-style-6 input[type="button"] {
+.form-style-6 input[type="submit"] {
   width: 50%;
-  padding: 3%;
+  padding: 0.5rem 1.5rem;
   background: #222;
   color: #fff;
   border: 2px solid #222;
   border-radius: 3rem;
-  font-size: larger;
+  font-size: 20px;
+  font-weight: 500;
+  transition: all 0.4s ease;
+  width: fit-content;
+
 }
 
-.form-style-6 input[type="submit"]:hover,
-.form-style-6 input[type="button"]:hover {
+.form-style-6 input[type="submit"]:hover {
   background: var(--color);
   box-shadow: rgba(0, 0, 0, 0.5) 0px 5px 15px;
   color: #000000;
