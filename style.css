@@ -151,7 +151,7 @@ section .title::after {
 
 .navbar .menu li a {
   display: block;
-  color: #fff;
+  color: var(--color);
   font-size: 18px;
   font-weight: 500;
   margin-left: 25px;
@@ -175,8 +175,26 @@ section .title::after {
   color: var(--color);
 }
 
+.navbar.sticky .menu li a{
+  color: #fff;
+  transition: color 0.3s ease;
+}
+
 .navbar.sticky .menu li a:hover {
   color: #fff;
+}
+
+.navbar.sticky .menu li a::after {
+  content: "";
+  width: 0px;
+  height: 2px;
+  display: block;
+  background: #fff;
+  transition: 300ms;
+}
+
+.navbar.sticky .menu li a:hover::after {
+  width: 100%;
 }
 
 /* menu btn styling */
@@ -226,12 +244,15 @@ section .title::after {
   background-attachment: fixed;
   font-family: "Capriola", sans-serif;
 
-  background: url("https://d.img.vision/irahuldutta02/background-2.jpg")
-    no-repeat center;
+  /* background */
+  background: url("https://i.postimg.cc/0NJKsftZ/background-01.jpg")
+    no-repeat center ;
+
   background-repeat: no-repeat;
   background-size: cover;
-  background-position: center center;
+  background-position: center;
   break-inside: avoid;
+
 
   /* Eager loading */
   image-rendering: -webkit-optimize-contrast; /* WebKit (Safari/Chrome) */
