@@ -772,6 +772,7 @@ section .title::after {
 
 .form-style-6 textarea {
   resize: vertical;
+  height: 8rem;
 }
 
 .form-style-6 input[type="submit"] {
