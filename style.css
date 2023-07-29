@@ -1,11 +1,22 @@
 /* Created By Rahul Dutta */
 
+/* font */
+
+/* Capriola */
+@import url("https://fonts.googleapis.com/css2?family=Capriola&display=swap");
+/* Yatra One */
+@import url("https://fonts.googleapis.com/css2?family=Yatra+One&display=swap");
+
+
+
 * {
   margin: 0;
   padding: 0;
   box-sizing: border-box;
   text-decoration: none;
-  font-family: "Capriola", sans-serif;
+  
+  /* font-family: "Capriola", sans-serif; */
+  font-family: "Yatra One", cursive;
 }
 
 i {
@@ -57,14 +68,14 @@ section {
   padding-top: 150px;
 }
 
-.about,
+/* .about,
 .services,
 .skills,
 .background,
 .contact,
 footer {
   font-family: "Capriola", sans-serif;
-}
+} */
 
 .about .about-content,
 .services .serv-content,
@@ -83,7 +94,7 @@ section .title {
   font-weight: 500;
   margin-bottom: 60px;
   padding-bottom: 20px;
-  font-family: "Capriola", sans-serif;
+  /* font-family: "Capriola", sans-serif; */
 }
 
 section .title::before {
@@ -114,7 +125,7 @@ section .title::after {
   width: 100%;
   z-index: 999;
   padding: 30px 0;
-  font-family: "Capriola", sans-serif;
+  /* font-family: "Capriola", sans-serif; */
   transition: all 0.3s ease;
 }
 
@@ -175,7 +186,7 @@ section .title::after {
   color: var(--color);
 }
 
-.navbar.sticky .menu li a{
+.navbar.sticky .menu li a {
   color: #fff;
   transition: color 0.3s ease;
 }
@@ -242,17 +253,16 @@ section .title::after {
   color: #fff;
   min-height: 500px;
   background-attachment: fixed;
-  font-family: "Capriola", sans-serif;
+  /* font-family: "Capriola", sans-serif; */
 
   /* background */
-  background: url("https://i.postimg.cc/0NJKsftZ/background-01.jpg")
-    no-repeat center ;
+  background: url("https://i.postimg.cc/0NJKsftZ/background-01.jpg") no-repeat
+    center;
 
   background-repeat: no-repeat;
   background-size: cover;
   background-position: center;
   break-inside: avoid;
-
 
   /* Eager loading */
   image-rendering: -webkit-optimize-contrast; /* WebKit (Safari/Chrome) */
@@ -462,7 +472,6 @@ section .title::after {
   display: flex;
   justify-content: center;
   align-items: center;
-  
 }
 
 .services .serv-content .card div {
@@ -540,7 +549,6 @@ section .title::after {
   transition: all 0.8s ease;
   width: 150px;
   height: 30px;
-
 }
 
 .skills .skills-content .column .inside-coloum div:hover {
@@ -595,11 +603,9 @@ section .title::after {
   gap: 1rem;
   /* box-shadow: var(--color) 0px 5px 15px; */
   box-shadow: 0 0 1rem var(--color);
-
 }
 
-
-.background .box-container .box .bg-txt-div{
+.background .box-container .box .bg-txt-div {
   display: flex;
   flex-direction: column;
   justify-content: center;
@@ -619,7 +625,6 @@ section .title::after {
   border-radius: 5rem;
   padding: 0.5rem 2.5rem;
   box-shadow: 0 0 0.5rem var(--color);
-
 }
 
 .background .box-container .box h3 {
@@ -650,7 +655,6 @@ section .title::after {
   align-items: center;
   border: 3px solid var(--color);
   box-shadow: 0 0 0.5rem var(--color);
-
 }
 
 .bg-icon-img-div img {
@@ -707,7 +711,7 @@ section .title::after {
 /* form  */
 
 .form-style-6 {
-  font-family: "Capriola", sans-serif;
+  /* font-family: "Capriola", sans-serif; */
   max-width: 100%;
   margin: 10px auto;
   padding: 25px;
@@ -767,7 +771,7 @@ section .title::after {
   border: 1px solid #ccc;
   padding: 3%;
   color: #555;
-  font-family: "Capriola", sans-serif;
+  /* font-family: "Capriola", sans-serif; */
   border-radius: 10px;
 }
 
