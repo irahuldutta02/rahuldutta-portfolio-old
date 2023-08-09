@@ -19,6 +19,14 @@
   font-family: "Yatra One", cursive;
 }
 
+body {
+  scrollbar-width: none;
+}
+
+body::-webkit-scrollbar {
+  display: none;
+}
+
 i {
   font-size: larger;
 }
