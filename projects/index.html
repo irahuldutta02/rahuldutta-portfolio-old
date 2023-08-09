@@ -23,291 +23,400 @@
     <title>Rahul-Dutta/projects</title>
     <link rel="stylesheet" href="output.css">
     <style>
-        *{
+        * {
             font-family: 'Yatra One', cursive;
+        }
+
+        .active-filter {
+            color: #1d4ed8;
+        }
+
+        .display-none{
+            display: none;
+        }
+
+        .display-flex{
+            display: flex;
         }
     </style>
 </head>
 
 <body class="">
-    <nav>
+    <nav class="relative" >
+        <div class="fixed z-10 flex justify-center items-center text-center top-5 left-4" >
+            <a href="../"><i class='bx bxs-chevrons-left text-3xl text-white'></i></a>
+        </div>
         <div class="navbar flex justify-center items-center p-6 bg-blue-700 fixed w-full">
             <div class="flex justify-center items-center">
-                <h1 class="text-3xl font-bold text-white">My Projects</h1>
+                <a href="#"><h1 class="text-3xl font-bold text-white">My Projects</h1></a>
             </div>
         </div>
     </nav>
 
-    <main class="pt-[7rem] px-8">
+    <main class="pt-[7rem] px-6">
 
-        <div class="flex flex-col justify-center items-center">
+        <div class="portfolio-isotope">
 
-            <div class="flex flex-col justify-center items-center">
-                <div>
-                    <h1 class="text-2xl font-bold text-center">These all are my projects.
-                    </h1>
-                </div>
-                <div class=""></div>
+            <div class="py-4 flex justify-center items-center">
+                <ul class="flex gap-4 px-4 flex-wrap portfolio-flters">
+                    <li class="filter-all text-xl active-filter cursor-pointer hover:text-blue-500">All</li>
+                    <li class="filter-frontend text-xl cursor-pointer hover:text-blue-500">Frontend</li>
+                    <li class="filter-backend text-xl cursor-pointer hover:text-blue-500">Backend</li>
+                    <li class="filter-ui-ux text-xl cursor-pointer  hover:text-blue-500">Ui-Ux</li>
+                </ul>
             </div>
 
-            <div class="pt-4">
-                <div class="flex gap-4 px-4 flex-wrap">
-                    <a class="text-xl" href="">All</a>
-                    <a class="text-xl" href="">Frontend</a>
-                    <a class="text-xl" href="">Java</a>
-                    <a class="text-xl" href="">Ui-Ux</a>
+            <div class="flex justify-center items-center py-8">
+                <div class="flex justify-center items-center gap-8 flex-wrap max-w-5xl portfolio-container">
+
+                    <!-- cards -->
+                    <!--one-card-clone-->
+                    <div
+                        class="filter-frontend max-w-[20rem] h-[28rem] bg-white border border-gray-200 rounded-lg shadow-xl dark:bg-gray-800 dark:border-gray-700 flex flex-col portfolio-item">
+
+                        <!-- change it -->
+                        <div>
+                            <a target="_blank" href="https://irahuldutta02.github.io/web-dev-projects-01/one-card">
+                                <img class="rounded-t-lg" src="./gif/one-card-clone.gif" alt="" />
+                            </a>
+                        </div>
+
+                        <div class="p-5 h-full flex flex-col justify-between">
+
+                            <div class="">
+                                <!-- change it -->
+                                <a target="_blank" href="https://irahuldutta02.github.io/web-dev-projects-01/one-card">
+                                    <h5 class="mb-2 text-2xl font-bold tracking-tight text-gray-900 dark:text-white">One
+                                        Card Clone
+                                    </h5>
+                                </a>
+
+                                <!-- change it  -->
+                                <p class="mb-3 font-normal text-gray-700 dark:text-gray-400 leading-7">
+                                    Using
+                                    &nbsp
+                                    <b class="bg-gray-700 text-white px-2 rounded-md">HTML</b>
+                                    &nbsp
+                                    <b class="bg-gray-700 text-white px-2 rounded-md">CSS</b>
+                                    &nbsp
+                                </p>
+                            </div>
+
+                            <div class="flex justify-start items-center gap-4">
+
+                                <!-- change it  -->
+                                <a target="_blank" href="https://irahuldutta02.github.io/web-dev-projects-01/one-card"
+                                    class="inline-flex items-center px-3 py-2 text-sm font-medium text-center text-white bg-blue-700 rounded-lg hover:bg-blue-800 focus:ring-4 focus:outline-none focus:ring-blue-300 dark:bg-blue-600 dark:hover:bg-blue-700 dark:focus:ring-blue-800">
+                                    <i class='bx bx-link-external text-xl'></i>
+                                </a>
+
+                                <!-- change it -->
+                                <a target="_blank"
+                                    href="https://github.com/irahuldutta02/web-dev-projects-01/tree/main/one-card"
+                                    class="inline-flex items-center px-3 py-2 text-sm font-medium text-center text-white bg-blue-700 rounded-lg hover:bg-blue-800 focus:ring-4 focus:outline-none focus:ring-blue-300 dark:bg-blue-600 dark:hover:bg-blue-700 dark:focus:ring-blue-800">
+                                    <i class='bx bxl-github text-xl'></i>
+                                </a>
+
+                                <!-- change it  -->
+                                <a target="_blank"
+                                    href="https://minhaskamal.github.io/DownGit/#/home?url=https://github.com/irahuldutta02/web-dev-projects-01/tree/main/one-card"
+                                    class="inline-flex items-center px-3 py-2 text-sm font-medium text-center text-white bg-blue-700 rounded-lg hover:bg-blue-800 focus:ring-4 focus:outline-none focus:ring-blue-300 dark:bg-blue-600 dark:hover:bg-blue-700 dark:focus:ring-blue-800">
+                                    <i class='bx bx-cloud-download text-xl'></i>
+                                </a>
+                            </div>
+                        </div>
+                    </div>
+                    <!--one-card-clone-->
+
+                    <!--liquid-landing-page-->
+                    <div
+                        class="filter-frontend max-w-[20rem] h-[28rem] bg-white border border-gray-200 rounded-lg shadow-xl dark:bg-gray-800 dark:border-gray-700 flex flex-col portfolio-item">
+
+                        <!-- change it -->
+                        <div>
+                            <a target="_blank" href="https://irahuldutta02.github.io/web-dev-projects-01/liquid-landing-page/dist/">
+                                <img class="rounded-t-lg" src="./gif/liquid-landing-page.gif" alt="" />
+                            </a>
+                        </div>
+
+                        <div class="p-5 h-full flex flex-col justify-between">
+
+                            <div class="">
+                                <!-- change it -->
+                                <a target="_blank"
+                                    href="https://irahuldutta02.github.io/web-dev-projects-01/liquid-landing-page/dist/">
+                                    <h5 class="mb-2 text-2xl font-bold tracking-tight text-gray-900 dark:text-white">
+                                        Liquid
+                                        Landing Page
+                                    </h5>
+                                </a>
+
+                                <!-- change it  -->
+                                <p class="mb-3 font-normal text-gray-700 dark:text-gray-400 leading-7">
+                                    Using
+                                    &nbsp
+                                    <b class="bg-gray-700 text-white px-2 rounded-md">TAILWIND CSS</b>
+                                    &nbsp
+                                </p>
+                            </div>
+
+                            <div class="flex justify-start items-center gap-4">
+
+                                <!-- change it  -->
+                                <a target="_blank"
+                                    href="https://irahuldutta02.github.io/web-dev-projects-01/liquid-landing-page/dist/"
+                                    class="inline-flex items-center px-3 py-2 text-sm font-medium text-center text-white bg-blue-700 rounded-lg hover:bg-blue-800 focus:ring-4 focus:outline-none focus:ring-blue-300 dark:bg-blue-600 dark:hover:bg-blue-700 dark:focus:ring-blue-800">
+                                    <i class='bx bx-link-external text-xl'></i>
+                                </a>
+
+                                <!-- change it -->
+                                <a target="_blank"
+                                    href="https://github.com/irahuldutta02/web-dev-projects-01/tree/main/liquid-landing-page"
+                                    class="inline-flex items-center px-3 py-2 text-sm font-medium text-center text-white bg-blue-700 rounded-lg hover:bg-blue-800 focus:ring-4 focus:outline-none focus:ring-blue-300 dark:bg-blue-600 dark:hover:bg-blue-700 dark:focus:ring-blue-800">
+                                    <i class='bx bxl-github text-xl'></i>
+                                </a>
+
+                                <!-- change it  -->
+                                <a target="_blank"
+                                    href="https://minhaskamal.github.io/DownGit/#/home?url=https://github.com/irahuldutta02/web-dev-projects-01/tree/main/liquid-landing-page"
+                                    class="inline-flex items-center px-3 py-2 text-sm font-medium text-center text-white bg-blue-700 rounded-lg hover:bg-blue-800 focus:ring-4 focus:outline-none focus:ring-blue-300 dark:bg-blue-600 dark:hover:bg-blue-700 dark:focus:ring-blue-800">
+                                    <i class='bx bx-cloud-download text-xl'></i>
+                                </a>
+                            </div>
+                        </div>
+                    </div>
+                    <!--liquid-landing-page-->
+
+                    <!--trafalgar-landing-page-->
+                    <div
+                        class="filter-frontend max-w-[20rem] h-[28rem] bg-white border border-gray-200 rounded-lg shadow-xl dark:bg-gray-800 dark:border-gray-700 flex flex-col portfolio-item">
+
+                        <!-- change it -->
+                        <div>
+                            <a target="_blank" href="https://irahuldutta02.github.io/web-dev-projects-01/trafalgar-tailwind-landing-page/dist/">
+                                <img class="rounded-t-lg" src="./gif/trafalgar-landing-page.gif" alt="" />
+                            </a>
+                        </div>
+
+                        <div class="p-5 h-full flex flex-col justify-between">
+
+                            <div class="">
+                                <!-- change it -->
+                                <a target="_blank"
+                                    href="https://irahuldutta02.github.io/web-dev-projects-01/trafalgar-tailwind-landing-page/dist/">
+                                    <h5 class="mb-2 text-2xl font-bold tracking-tight text-gray-900 dark:text-white">
+                                        Trafalgar Landing Page</h5>
+                                </a>
+
+                                <!-- change it  -->
+                                <p class="mb-3 font-normal text-gray-700 dark:text-gray-400 leading-7">
+                                    Using
+                                    &nbsp
+                                    <b class="bg-gray-700 text-white px-2 rounded-md">TAILWIND CSS</b>
+                                    &nbsp
+                                </p>
+                            </div>
+
+                            <div class="flex justify-start items-center gap-4">
+
+                                <!-- change it  -->
+                                <a target="_blank"
+                                    href="https://irahuldutta02.github.io/web-dev-projects-01/trafalgar-tailwind-landing-page/dist/"
+                                    class="inline-flex items-center px-3 py-2 text-sm font-medium text-center text-white bg-blue-700 rounded-lg hover:bg-blue-800 focus:ring-4 focus:outline-none focus:ring-blue-300 dark:bg-blue-600 dark:hover:bg-blue-700 dark:focus:ring-blue-800">
+                                    <i class='bx bx-link-external text-xl'></i>
+                                </a>
+
+                                <!-- change it -->
+                                <a target="_blank"
+                                    href="https://github.com/irahuldutta02/web-dev-projects-01/tree/main/trafalgar-tailwind-landing-page"
+                                    class="inline-flex items-center px-3 py-2 text-sm font-medium text-center text-white bg-blue-700 rounded-lg hover:bg-blue-800 focus:ring-4 focus:outline-none focus:ring-blue-300 dark:bg-blue-600 dark:hover:bg-blue-700 dark:focus:ring-blue-800">
+                                    <i class='bx bxl-github text-xl'></i>
+                                </a>
+
+                                <!-- change it  -->
+                                <a target="_blank"
+                                    href="https://minhaskamal.github.io/DownGit/#/home?url=https://github.com/irahuldutta02/web-dev-projects-01/tree/main/trafalgar-tailwind-landing-page"
+                                    class="inline-flex items-center px-3 py-2 text-sm font-medium text-center text-white bg-blue-700 rounded-lg hover:bg-blue-800 focus:ring-4 focus:outline-none focus:ring-blue-300 dark:bg-blue-600 dark:hover:bg-blue-700 dark:focus:ring-blue-800">
+                                    <i class='bx bx-cloud-download text-xl'></i>
+                                </a>
+                            </div>
+                        </div>
+                    </div>
+                    <!--trafalgar-landing-page-->
+
+                    <!--Tindog-->
+                    <div
+                        class="filter-frontend max-w-[20rem] h-[28rem] bg-white border border-gray-200 rounded-lg shadow-xl dark:bg-gray-800 dark:border-gray-700 flex flex-col portfolio-item">
+
+                        <!-- change it -->
+                        <div>
+                            <a target="_blank" href="https://irahuldutta02.github.io/web-dev-projects-01/tindog-bootstrap/index.html">
+                                <img class="rounded-t-lg" src="./gif/gif-04.gif" alt="" />
+                            </a>
+                        </div>
+
+                        <div class="p-5 h-full flex flex-col justify-between">
+
+                            <div class="">
+                                <!-- change it -->
+                                <a target="_blank"
+                                    href="https://irahuldutta02.github.io/web-dev-projects-01/tindog-bootstrap/index.html">
+                                    <h5 class="mb-2 text-2xl font-bold tracking-tight text-gray-900 dark:text-white">
+                                        Tindog
+                                        Landing Page</h5>
+                                </a>
+
+                                <!-- change it  -->
+                                <p class="mb-3 font-normal text-gray-700 dark:text-gray-400 leading-7">
+                                    Using
+                                    &nbsp
+                                    <b class="bg-gray-700 text-white px-2 rounded-md">Bootstrap</b>
+                                    &nbsp
+                                </p>
+                            </div>
+
+                            <div class="flex justify-start items-center gap-4">
+
+                                <!-- change it  -->
+                                <a target="_blank"
+                                    href="https://irahuldutta02.github.io/web-dev-projects-01/tindog-bootstrap/index.html"
+                                    class="inline-flex items-center px-3 py-2 text-sm font-medium text-center text-white bg-blue-700 rounded-lg hover:bg-blue-800 focus:ring-4 focus:outline-none focus:ring-blue-300 dark:bg-blue-600 dark:hover:bg-blue-700 dark:focus:ring-blue-800">
+                                    <i class='bx bx-link-external text-xl'></i>
+                                </a>
+
+                                <!-- change it -->
+                                <a target="_blank"
+                                    href="https://github.com/irahuldutta02/web-dev-projects-01/tree/main/tindog-bootstrap"
+                                    class="inline-flex items-center px-3 py-2 text-sm font-medium text-center text-white bg-blue-700 rounded-lg hover:bg-blue-800 focus:ring-4 focus:outline-none focus:ring-blue-300 dark:bg-blue-600 dark:hover:bg-blue-700 dark:focus:ring-blue-800">
+                                    <i class='bx bxl-github text-xl'></i>
+                                </a>
+
+                                <!-- change it  -->
+                                <a target="_blank"
+                                    href="https://minhaskamal.github.io/DownGit/#/home?url=https://github.com/irahuldutta02/web-dev-projects-01/tree/main/tindog-bootstrap"
+                                    class="inline-flex items-center px-3 py-2 text-sm font-medium text-center text-white bg-blue-700 rounded-lg hover:bg-blue-800 focus:ring-4 focus:outline-none focus:ring-blue-300 dark:bg-blue-600 dark:hover:bg-blue-700 dark:focus:ring-blue-800">
+                                    <i class='bx bx-cloud-download text-xl'></i>
+                                </a>
+                            </div>
+                        </div>
+                    </div>
+                    <!--Tindog-->
+
+                    <!--Student Managment Console App-->
+                    <div
+                        class="filter-backend max-w-[20rem] h-[28rem] bg-white border border-gray-200 rounded-lg shadow-xl dark:bg-gray-800 dark:border-gray-700 flex flex-col portfolio-item ">
+
+                        <!-- change it -->
+                        <div>
+                            <a target="_blank" href="https://github.com/irahuldutta02/java-projects-01/tree/main/basic-student-managment">
+                                <img class="rounded-t-lg" src="./gif/gif-05.gif" alt="" />
+                            </a>
+                        </div>
+
+                        <div class="p-5 h-full flex flex-col justify-between">
+
+                            <div class="">
+                                <!-- change it -->
+                                <a target="_blank"
+                                    href="https://github.com/irahuldutta02/java-projects-01/tree/main/basic-student-managment">
+                                    <h5 class="mb-2 text-2xl font-bold tracking-tight text-gray-900 dark:text-white">
+                                        Student
+                                        Managment Console App</h5>
+                                </a>
+
+                                <!-- change it  -->
+                                <p class="mb-3 font-normal text-gray-700 dark:text-gray-400 leading-7">
+                                    Using
+                                    &nbsp
+                                    <b class="bg-gray-700 text-white px-2 rounded-md">JDBC</b>
+                                    &nbsp
+                                </p>
+                            </div>
+
+                            <div class="flex justify-start items-center gap-4">
+
+                                <!-- change it -->
+                                <a target="_blank"
+                                    href="https://github.com/irahuldutta02/java-projects-01/tree/main/basic-student-managment"
+                                    class="inline-flex items-center px-3 py-2 text-sm font-medium text-center text-white bg-blue-700 rounded-lg hover:bg-blue-800 focus:ring-4 focus:outline-none focus:ring-blue-300 dark:bg-blue-600 dark:hover:bg-blue-700 dark:focus:ring-blue-800">
+                                    <i class='bx bxl-github text-xl'></i>
+                                </a>
+
+                                <!-- change it  -->
+                                <a target="_blank"
+                                    href="https://minhaskamal.github.io/DownGit/#/home?url=https://github.com/irahuldutta02/java-projects-01/tree/main/basic-student-managment"
+                                    class="inline-flex items-center px-3 py-2 text-sm font-medium text-center text-white bg-blue-700 rounded-lg hover:bg-blue-800 focus:ring-4 focus:outline-none focus:ring-blue-300 dark:bg-blue-600 dark:hover:bg-blue-700 dark:focus:ring-blue-800">
+                                    <i class='bx bx-cloud-download text-xl'></i>
+                                </a>
+                            </div>
+                        </div>
+                    </div>
+                    <!--Student Managment Console App-->
+
+                    <!-- SignUp LogIn ForgotPass Figma -->
+                    <div
+                        class="filter-ui-ux max-w-[20rem] h-[28rem] bg-white border border-gray-200 rounded-lg shadow-xl dark:bg-gray-800 dark:border-gray-700 flex flex-col portfolio-item filter-ui-ux">
+
+                        <!-- change it -->
+                        <div>
+                            <a target="_blank" href="https://www.figma.com/proto/HVJhlP7JpvMLwyWhLZaPZr/SignUp-LogIn-ForgotPassword-for-Mobile-App?node-id=0%3A1&viewport=243%2C500%2C0.71&scaling=scale-down&starting-point-node-id=3%3A41">
+                                <img class="rounded-t-lg" src="./gif/gif-01.gif" alt="" />
+                            </a>
+                        </div>
+
+                        <div class="p-5 h-full flex flex-col justify-between">
+
+                            <div class="">
+                                <!-- change it -->
+                                <a target="_blank"
+                                    href="https://www.figma.com/file/HVJhlP7JpvMLwyWhLZaPZr/SignUp-LogIn-ForgotPassword-for-Mobile-App?t=DswFYEZQKhzfmC8D-1">
+                                    <h5 class="mb-2 text-2xl font-bold tracking-tight text-gray-900 dark:text-white">
+                                        SignUp-LogIn-ForgotPass</h5>
+                                </a>
+
+                                <!-- change it  -->
+                                <p class="mb-3 font-normal text-gray-700 dark:text-gray-400 leading-7">
+                                    Mobile app UI-UX in
+                                    &nbsp
+                                    <b class="bg-gray-700 text-white px-2 rounded-md">FIGMA</b>
+                                    &nbsp
+                                </p>
+                            </div>
+
+                            <div class="flex justify-start items-center gap-4">
+
+                                <!-- change it -->
+                                <a target="_blank"
+                                    href="https://www.figma.com/file/HVJhlP7JpvMLwyWhLZaPZr/SignUp-LogIn-ForgotPassword-for-Mobile-App?t=DswFYEZQKhzfmC8D-1"
+                                    class="inline-flex items-center px-3 py-2 text-sm font-medium text-center text-white bg-blue-700 rounded-lg hover:bg-blue-800 focus:ring-4 focus:outline-none focus:ring-blue-300 dark:bg-blue-600 dark:hover:bg-blue-700 dark:focus:ring-blue-800">
+                                    <i class='bx bxl-figma text-xl'></i>
+                                </a>
+
+                                <!-- change it -->
+                                <a target="_blank"
+                                    href="https://www.figma.com/proto/HVJhlP7JpvMLwyWhLZaPZr/SignUp-LogIn-ForgotPassword-for-Mobile-App?node-id=0%3A1&viewport=243%2C500%2C0.71&scaling=scale-down&starting-point-node-id=3%3A41"
+                                    class="inline-flex items-center px-3 py-2 text-sm font-medium text-center text-white bg-blue-700 rounded-lg hover:bg-blue-800 focus:ring-4 focus:outline-none focus:ring-blue-300 dark:bg-blue-600 dark:hover:bg-blue-700 dark:focus:ring-blue-800">
+                                    <i class='bx bx-play-circle text-xl'></i>
+                                </a>
+
+                            </div>
+                        </div>
+                    </div>
+                    <!-- SignUp LogIn ForgotPass Figma -->
+
                 </div>
             </div>
+
         </div>
-
-
-        <div class="flex justify-center items-center py-8">
-            <div class="flex justify-center items-center gap-8 flex-wrap max-w-5xl">
-
-
-                <!-- cards -->
-    
-                <!--one-card-clone-->
-                <div
-                    class="max-w-[20rem] bg-white border border-gray-200 rounded-lg shadow-xl dark:bg-gray-800 dark:border-gray-700">
-                    <a target="_blank" href="./gif/one-card-clone.gif">
-                        <img class="rounded-t-lg" src="./gif/one-card-clone.gif" alt="" />
-                    </a>
-                    <div class="p-5">
-                        <a href="https://irahuldutta02.github.io/web-dev-projects-01/one-card">
-                            <h5 class="mb-2 text-2xl font-bold tracking-tight text-gray-900 dark:text-white">One Card Clone
-                            </h5>
-                        </a>
-                        <p class="mb-3 font-normal text-gray-700 dark:text-gray-400">One card clone using <b>HTML CSS</b>
-                        </p>
-                        <div class="flex justify-start items-center gap-4">
-                            <a target="_blank" href="https://irahuldutta02.github.io/web-dev-projects-01/one-card"
-                                class="inline-flex items-center px-3 py-2 text-sm font-medium text-center text-white bg-blue-700 rounded-lg hover:bg-blue-800 focus:ring-4 focus:outline-none focus:ring-blue-300 dark:bg-blue-600 dark:hover:bg-blue-700 dark:focus:ring-blue-800">
-                                <i class='bx bx-link-external'></i>
-                            </a>
-                            <a target="_blank"
-                                href="https://github.com/irahuldutta02/web-dev-projects-01/tree/main/one-card"
-                                class="inline-flex items-center px-3 py-2 text-sm font-medium text-center text-white bg-blue-700 rounded-lg hover:bg-blue-800 focus:ring-4 focus:outline-none focus:ring-blue-300 dark:bg-blue-600 dark:hover:bg-blue-700 dark:focus:ring-blue-800">
-                                <i class='bx bxl-github'></i>
-                            </a>
-                            <a target="_blank"
-                                href="https://minhaskamal.github.io/DownGit/#/home?url=https://github.com/irahuldutta02/web-dev-projects-01/tree/main/one-card"
-                                class="inline-flex items-center px-3 py-2 text-sm font-medium text-center text-white bg-blue-700 rounded-lg hover:bg-blue-800 focus:ring-4 focus:outline-none focus:ring-blue-300 dark:bg-blue-600 dark:hover:bg-blue-700 dark:focus:ring-blue-800">
-                                <i class='bx bx-cloud-download'></i>
-                            </a>
-                        </div>
-                    </div>
-                </div>
-                <!--one-card-clone-->
-
-                <!--one-card-clone-->
-                <div
-                    class="max-w-[20rem] bg-white border border-gray-200 rounded-lg shadow-xl dark:bg-gray-800 dark:border-gray-700">
-                    <a target="_blank" href="./gif/one-card-clone.gif">
-                        <img class="rounded-t-lg" src="./gif/one-card-clone.gif" alt="" />
-                    </a>
-                    <div class="p-5">
-                        <a href="https://irahuldutta02.github.io/web-dev-projects-01/one-card">
-                            <h5 class="mb-2 text-2xl font-bold tracking-tight text-gray-900 dark:text-white">One Card Clone
-                            </h5>
-                        </a>
-                        <p class="mb-3 font-normal text-gray-700 dark:text-gray-400">One card clone using <b>HTML CSS</b>
-                        </p>
-                        <div class="flex justify-start items-center gap-4">
-                            <a target="_blank" href="https://irahuldutta02.github.io/web-dev-projects-01/one-card"
-                                class="inline-flex items-center px-3 py-2 text-sm font-medium text-center text-white bg-blue-700 rounded-lg hover:bg-blue-800 focus:ring-4 focus:outline-none focus:ring-blue-300 dark:bg-blue-600 dark:hover:bg-blue-700 dark:focus:ring-blue-800">
-                                <i class='bx bx-link-external'></i>
-                            </a>
-                            <a target="_blank"
-                                href="https://github.com/irahuldutta02/web-dev-projects-01/tree/main/one-card"
-                                class="inline-flex items-center px-3 py-2 text-sm font-medium text-center text-white bg-blue-700 rounded-lg hover:bg-blue-800 focus:ring-4 focus:outline-none focus:ring-blue-300 dark:bg-blue-600 dark:hover:bg-blue-700 dark:focus:ring-blue-800">
-                                <i class='bx bxl-github'></i>
-                            </a>
-                            <a target="_blank"
-                                href="https://minhaskamal.github.io/DownGit/#/home?url=https://github.com/irahuldutta02/web-dev-projects-01/tree/main/one-card"
-                                class="inline-flex items-center px-3 py-2 text-sm font-medium text-center text-white bg-blue-700 rounded-lg hover:bg-blue-800 focus:ring-4 focus:outline-none focus:ring-blue-300 dark:bg-blue-600 dark:hover:bg-blue-700 dark:focus:ring-blue-800">
-                                <i class='bx bx-cloud-download'></i>
-                            </a>
-                        </div>
-                    </div>
-                </div>
-                <!--one-card-clone-->
-
-                <!--one-card-clone-->
-                <div
-                    class="max-w-[20rem] bg-white border border-gray-200 rounded-lg shadow-xl dark:bg-gray-800 dark:border-gray-700">
-                    <a target="_blank" href="./gif/one-card-clone.gif">
-                        <img class="rounded-t-lg" src="./gif/one-card-clone.gif" alt="" />
-                    </a>
-                    <div class="p-5">
-                        <a href="https://irahuldutta02.github.io/web-dev-projects-01/one-card">
-                            <h5 class="mb-2 text-2xl font-bold tracking-tight text-gray-900 dark:text-white">One Card Clone
-                            </h5>
-                        </a>
-                        <p class="mb-3 font-normal text-gray-700 dark:text-gray-400">One card clone using <b>HTML CSS</b>
-                        </p>
-                        <div class="flex justify-start items-center gap-4">
-                            <a target="_blank" href="https://irahuldutta02.github.io/web-dev-projects-01/one-card"
-                                class="inline-flex items-center px-3 py-2 text-sm font-medium text-center text-white bg-blue-700 rounded-lg hover:bg-blue-800 focus:ring-4 focus:outline-none focus:ring-blue-300 dark:bg-blue-600 dark:hover:bg-blue-700 dark:focus:ring-blue-800">
-                                <i class='bx bx-link-external'></i>
-                            </a>
-                            <a target="_blank"
-                                href="https://github.com/irahuldutta02/web-dev-projects-01/tree/main/one-card"
-                                class="inline-flex items-center px-3 py-2 text-sm font-medium text-center text-white bg-blue-700 rounded-lg hover:bg-blue-800 focus:ring-4 focus:outline-none focus:ring-blue-300 dark:bg-blue-600 dark:hover:bg-blue-700 dark:focus:ring-blue-800">
-                                <i class='bx bxl-github'></i>
-                            </a>
-                            <a target="_blank"
-                                href="https://minhaskamal.github.io/DownGit/#/home?url=https://github.com/irahuldutta02/web-dev-projects-01/tree/main/one-card"
-                                class="inline-flex items-center px-3 py-2 text-sm font-medium text-center text-white bg-blue-700 rounded-lg hover:bg-blue-800 focus:ring-4 focus:outline-none focus:ring-blue-300 dark:bg-blue-600 dark:hover:bg-blue-700 dark:focus:ring-blue-800">
-                                <i class='bx bx-cloud-download'></i>
-                            </a>
-                        </div>
-                    </div>
-                </div>
-                <!--one-card-clone-->
-
-                <!--one-card-clone-->
-                <div
-                    class="max-w-[20rem] bg-white border border-gray-200 rounded-lg shadow-xl dark:bg-gray-800 dark:border-gray-700">
-                    <a target="_blank" href="./gif/one-card-clone.gif">
-                        <img class="rounded-t-lg" src="./gif/one-card-clone.gif" alt="" />
-                    </a>
-                    <div class="p-5">
-                        <a href="https://irahuldutta02.github.io/web-dev-projects-01/one-card">
-                            <h5 class="mb-2 text-2xl font-bold tracking-tight text-gray-900 dark:text-white">One Card Clone
-                            </h5>
-                        </a>
-                        <p class="mb-3 font-normal text-gray-700 dark:text-gray-400">One card clone using <b>HTML CSS</b>
-                        </p>
-                        <div class="flex justify-start items-center gap-4">
-                            <a target="_blank" href="https://irahuldutta02.github.io/web-dev-projects-01/one-card"
-                                class="inline-flex items-center px-3 py-2 text-sm font-medium text-center text-white bg-blue-700 rounded-lg hover:bg-blue-800 focus:ring-4 focus:outline-none focus:ring-blue-300 dark:bg-blue-600 dark:hover:bg-blue-700 dark:focus:ring-blue-800">
-                                <i class='bx bx-link-external'></i>
-                            </a>
-                            <a target="_blank"
-                                href="https://github.com/irahuldutta02/web-dev-projects-01/tree/main/one-card"
-                                class="inline-flex items-center px-3 py-2 text-sm font-medium text-center text-white bg-blue-700 rounded-lg hover:bg-blue-800 focus:ring-4 focus:outline-none focus:ring-blue-300 dark:bg-blue-600 dark:hover:bg-blue-700 dark:focus:ring-blue-800">
-                                <i class='bx bxl-github'></i>
-                            </a>
-                            <a target="_blank"
-                                href="https://minhaskamal.github.io/DownGit/#/home?url=https://github.com/irahuldutta02/web-dev-projects-01/tree/main/one-card"
-                                class="inline-flex items-center px-3 py-2 text-sm font-medium text-center text-white bg-blue-700 rounded-lg hover:bg-blue-800 focus:ring-4 focus:outline-none focus:ring-blue-300 dark:bg-blue-600 dark:hover:bg-blue-700 dark:focus:ring-blue-800">
-                                <i class='bx bx-cloud-download'></i>
-                            </a>
-                        </div>
-                    </div>
-                </div>
-                <!--one-card-clone-->
-
-                <!--one-card-clone-->
-                <div
-                    class="max-w-[20rem] bg-white border border-gray-200 rounded-lg shadow-xl dark:bg-gray-800 dark:border-gray-700">
-                    <a target="_blank" href="./gif/one-card-clone.gif">
-                        <img class="rounded-t-lg" src="./gif/one-card-clone.gif" alt="" />
-                    </a>
-                    <div class="p-5">
-                        <a href="https://irahuldutta02.github.io/web-dev-projects-01/one-card">
-                            <h5 class="mb-2 text-2xl font-bold tracking-tight text-gray-900 dark:text-white">One Card Clone
-                            </h5>
-                        </a>
-                        <p class="mb-3 font-normal text-gray-700 dark:text-gray-400">One card clone using <b>HTML CSS</b>
-                        </p>
-                        <div class="flex justify-start items-center gap-4">
-                            <a target="_blank" href="https://irahuldutta02.github.io/web-dev-projects-01/one-card"
-                                class="inline-flex items-center px-3 py-2 text-sm font-medium text-center text-white bg-blue-700 rounded-lg hover:bg-blue-800 focus:ring-4 focus:outline-none focus:ring-blue-300 dark:bg-blue-600 dark:hover:bg-blue-700 dark:focus:ring-blue-800">
-                                <i class='bx bx-link-external'></i>
-                            </a>
-                            <a target="_blank"
-                                href="https://github.com/irahuldutta02/web-dev-projects-01/tree/main/one-card"
-                                class="inline-flex items-center px-3 py-2 text-sm font-medium text-center text-white bg-blue-700 rounded-lg hover:bg-blue-800 focus:ring-4 focus:outline-none focus:ring-blue-300 dark:bg-blue-600 dark:hover:bg-blue-700 dark:focus:ring-blue-800">
-                                <i class='bx bxl-github'></i>
-                            </a>
-                            <a target="_blank"
-                                href="https://minhaskamal.github.io/DownGit/#/home?url=https://github.com/irahuldutta02/web-dev-projects-01/tree/main/one-card"
-                                class="inline-flex items-center px-3 py-2 text-sm font-medium text-center text-white bg-blue-700 rounded-lg hover:bg-blue-800 focus:ring-4 focus:outline-none focus:ring-blue-300 dark:bg-blue-600 dark:hover:bg-blue-700 dark:focus:ring-blue-800">
-                                <i class='bx bx-cloud-download'></i>
-                            </a>
-                        </div>
-                    </div>
-                </div>
-                <!--one-card-clone-->
-
-                <!--one-card-clone-->
-                <div
-                    class="max-w-[20rem] bg-white border border-gray-200 rounded-lg shadow-xl dark:bg-gray-800 dark:border-gray-700">
-                    <a target="_blank" href="./gif/one-card-clone.gif">
-                        <img class="rounded-t-lg" src="./gif/one-card-clone.gif" alt="" />
-                    </a>
-                    <div class="p-5">
-                        <a href="https://irahuldutta02.github.io/web-dev-projects-01/one-card">
-                            <h5 class="mb-2 text-2xl font-bold tracking-tight text-gray-900 dark:text-white">One Card Clone
-                            </h5>
-                        </a>
-                        <p class="mb-3 font-normal text-gray-700 dark:text-gray-400">One card clone using <b>HTML CSS</b>
-                        </p>
-                        <div class="flex justify-start items-center gap-4">
-                            <a target="_blank" href="https://irahuldutta02.github.io/web-dev-projects-01/one-card"
-                                class="inline-flex items-center px-3 py-2 text-sm font-medium text-center text-white bg-blue-700 rounded-lg hover:bg-blue-800 focus:ring-4 focus:outline-none focus:ring-blue-300 dark:bg-blue-600 dark:hover:bg-blue-700 dark:focus:ring-blue-800">
-                                <i class='bx bx-link-external'></i>
-                            </a>
-                            <a target="_blank"
-                                href="https://github.com/irahuldutta02/web-dev-projects-01/tree/main/one-card"
-                                class="inline-flex items-center px-3 py-2 text-sm font-medium text-center text-white bg-blue-700 rounded-lg hover:bg-blue-800 focus:ring-4 focus:outline-none focus:ring-blue-300 dark:bg-blue-600 dark:hover:bg-blue-700 dark:focus:ring-blue-800">
-                                <i class='bx bxl-github'></i>
-                            </a>
-                            <a target="_blank"
-                                href="https://minhaskamal.github.io/DownGit/#/home?url=https://github.com/irahuldutta02/web-dev-projects-01/tree/main/one-card"
-                                class="inline-flex items-center px-3 py-2 text-sm font-medium text-center text-white bg-blue-700 rounded-lg hover:bg-blue-800 focus:ring-4 focus:outline-none focus:ring-blue-300 dark:bg-blue-600 dark:hover:bg-blue-700 dark:focus:ring-blue-800">
-                                <i class='bx bx-cloud-download'></i>
-                            </a>
-                        </div>
-                    </div>
-                </div>
-                <!--one-card-clone-->
-
-                <!--one-card-clone-->
-                <div
-                    class="max-w-[20rem] bg-white border border-gray-200 rounded-lg shadow-xl dark:bg-gray-800 dark:border-gray-700">
-                    <a target="_blank" href="./gif/one-card-clone.gif">
-                        <img class="rounded-t-lg" src="./gif/one-card-clone.gif" alt="" />
-                    </a>
-                    <div class="p-5">
-                        <a href="https://irahuldutta02.github.io/web-dev-projects-01/one-card">
-                            <h5 class="mb-2 text-2xl font-bold tracking-tight text-gray-900 dark:text-white">One Card Clone
-                            </h5>
-                        </a>
-                        <p class="mb-3 font-normal text-gray-700 dark:text-gray-400">One card clone using <b>HTML CSS</b>
-                        </p>
-                        <div class="flex justify-start items-center gap-4">
-                            <a target="_blank" href="https://irahuldutta02.github.io/web-dev-projects-01/one-card"
-                                class="inline-flex items-center px-3 py-2 text-sm font-medium text-center text-white bg-blue-700 rounded-lg hover:bg-blue-800 focus:ring-4 focus:outline-none focus:ring-blue-300 dark:bg-blue-600 dark:hover:bg-blue-700 dark:focus:ring-blue-800">
-                                <i class='bx bx-link-external'></i>
-                            </a>
-                            <a target="_blank"
-                                href="https://github.com/irahuldutta02/web-dev-projects-01/tree/main/one-card"
-                                class="inline-flex items-center px-3 py-2 text-sm font-medium text-center text-white bg-blue-700 rounded-lg hover:bg-blue-800 focus:ring-4 focus:outline-none focus:ring-blue-300 dark:bg-blue-600 dark:hover:bg-blue-700 dark:focus:ring-blue-800">
-                                <i class='bx bxl-github'></i>
-                            </a>
-                            <a target="_blank"
-                                href="https://minhaskamal.github.io/DownGit/#/home?url=https://github.com/irahuldutta02/web-dev-projects-01/tree/main/one-card"
-                                class="inline-flex items-center px-3 py-2 text-sm font-medium text-center text-white bg-blue-700 rounded-lg hover:bg-blue-800 focus:ring-4 focus:outline-none focus:ring-blue-300 dark:bg-blue-600 dark:hover:bg-blue-700 dark:focus:ring-blue-800">
-                                <i class='bx bx-cloud-download'></i>
-                            </a>
-                        </div>
-                    </div>
-                </div>
-                <!--one-card-clone-->
-            </div>
-        </div>
-        
-
-        
 
     </main>
 
     <footer>
 
     </footer>
+
+    <!-- javascript  -->
+    <script src="main.js"></script>
 </body>
 
 </html>
