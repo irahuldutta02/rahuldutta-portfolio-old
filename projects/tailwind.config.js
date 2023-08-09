@@ -1,6 +1,6 @@
 /** @type {import('tailwindcss').Config} */
 module.exports = {
-  content: ["./projects/*.html"],
+  content: ["./*.html"],
   theme: {
     fontFamily: {
       'Yatra One': ['Yatra One', 'cursive']
