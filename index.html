@@ -244,47 +244,53 @@
             <div class="box-container">
 
                 <div class="box">
-                    <div class="bg-icon-img-div">
-                        <img src="https://i.postimg.cc/c15qwPyz/makaut-logo-no-bg.png" alt="makaut-logo-no-bg">
-                    </div>
+                    <a href="https://makautwb.ac.in/" target="_blank">
+                        <div class="bg-icon-img-div">
+                            <img src="https://i.postimg.cc/c15qwPyz/makaut-logo-no-bg.png" alt="makaut-logo-no-bg">
+                        </div>
+                    </a>
                     <div class="bg-year-div">
                         <span>2023</span>
                     </div>
                     <div class="bg-txt-div">
                         <h3>GRADUATION</h3>
                         <p>Bachelors of Computer Application,</p>
-                        <p>FROM : <a target="_blank" href="https://makautwb.ac.in/">Maulana Abul Kalam Azad University
+                        <p>FROM : <a>Maulana Abul Kalam Azad University
                                 Of Technology, West Bengal</a>
                         </p>
                     </div>
                 </div>
 
                 <div class="box">
-                    <div class="bg-icon-img-div">
-                        <img src="https://i.postimg.cc/ZRVZyR4B/wbchse-logo-no-bg.png" alt="makaut-logo-no-bg">
-                    </div>
+                    <a target="_blank" href="https://wbchse.wb.gov.in/">
+                        <div class="bg-icon-img-div">
+                            <img src="https://i.postimg.cc/ZRVZyR4B/wbchse-logo-no-bg.png" alt="makaut-logo-no-bg">
+                        </div>
+                    </a>
                     <div class="bg-year-div">
                         <span>2020</span>
                     </div>
                     <div class="bg-txt-div">
                         <h3>HIGHER SECONDARY</h3>
                         <p>Pure Science,</p>
-                        <p>From : <a target="_blank" href="https://wbchse.wb.gov.in/">West Bengal Council of Higher
+                        <p>From : <a>West Bengal Council of Higher
                                 Secondary Education</a></p>
                     </div>
                 </div>
 
                 <div class="box">
-                    <div class="bg-icon-img-div">
-                        <img src="https://i.postimg.cc/1XXS0Q3W/wbbse-logo-no-bg.png" alt="makaut-logo-no-bg">
-                    </div>
+                    <a target="_blank" href="https://wbbse.wb.gov.in/Web/">
+                        <div class="bg-icon-img-div">
+                            <img src="https://i.postimg.cc/1XXS0Q3W/wbbse-logo-no-bg.png" alt="makaut-logo-no-bg">
+                        </div>
+                    </a>
                     <div class="bg-year-div">
                         <span>2018</span>
                     </div>
                     <div class="bg-txt-div">
                         <h3>SECONDARY</h3>
                         <p>General Science,</p>
-                        <p>From : <a target="_blank" href="https://wbbse.wb.gov.in/Web/">West
+                        <p>From : <a>West
                                 Bengal Board of Secondary Education</a></p>
                     </div>
                 </div>
@@ -361,8 +367,6 @@
                 href="https://github.com/irahuldutta02/rahuldutta-portfolio.git">Source Code</a></span>
     </footer>
 
-    <!-- preloader  -->
-    <!-- <div id="preloader"></div> -->
 
     <!-- theme toggler -->
     <div class="theme-toggler">
@@ -384,41 +388,17 @@
 
     </div>
 
-    <!-- javascript  -->
+
+    <!-- JavaScripts -->
+
+    <!-- index js  -->
     <script src="./main/js/index.js"></script>
 
     <!-- theme toggler js  -->
-    <script>
-        let themeToggler = document.querySelector('.theme-toggler');
-        let toggleBtn = document.querySelector('.toggle-btn');
-
-        toggleBtn.onclick = () => {
-            themeToggler.classList.toggle('active');
-        }
-
-        window.onscroll = () => {
-            themeToggler.classList.remove('active');
-        }
-
-        document.querySelectorAll('.theme-toggler .theme-btn').forEach(btn => {
-
-            btn.onclick = () => {
-                let newColor = btn.style.background;
-                document.querySelector(':root').style.setProperty('--color', newColor);
-            }
-
-        });
-
-    </script>
+    <script src="./main/js/themetoger.js"></script>
 
     <!-- document last modified  -->
-    <script>
-        var lastUpdated = new Date(document.lastModified);
-        var options = { year: 'numeric', month: 'long', day: 'numeric' };
-        var formattedDate = lastUpdated.toLocaleString('en-US', options);
-        document.getElementById('last-modified').innerHTML = formattedDate;
-    </script>
-
+    <script src="./main/js/lastmodified.js"></script>
 
 
 </body>

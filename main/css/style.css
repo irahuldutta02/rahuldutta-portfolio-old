@@ -622,9 +622,9 @@ section .title::after {
   text-align: center;
 }
 
-.background .box-container .box .bg-year-div span {
+.background .box-container .box .bg-year-div {
   position: absolute;
-  top: -1.2rem;
+  top: -1.65rem;
   left: 50%;
   font-size: 1.3rem;
   background: var(--color-2);
@@ -988,12 +988,13 @@ footer span a:hover {
   }
 
   .scroll-up-btn {
+    display: flex;
+    justify-content: center;
     right: 15px;
     bottom: 15px;
-    height: 38px;
+    height: 35px;
     width: 35px;
     font-size: 23px;
-    line-height: 38px;
   }
 }
 
