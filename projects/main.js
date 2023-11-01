@@ -4,24 +4,19 @@ document.addEventListener("DOMContentLoaded", function () {
 
   filterItems.forEach((item) => {
     item.addEventListener("click", function () {
-      // Remove active class from all filters
       filterItems.forEach((filter) => {
         filter.classList.remove("active-filter");
       });
 
-      // Add active class to the clicked filter
       item.classList.add("active-filter");
+      item.classList.remove("animate-pulse");
 
-      // Get the filter value from the clicked filter
-      const selectedFilter = item.classList[0]; // Assumes class structure as described
+      const selectedFilter = item.classList[0];
 
-      // Toggle visibility of portfolio items based on selected filter
       portfolioItems.forEach((portfolioItem) => {
         if (selectedFilter === "filter-all") {
           portfolioItem.style.display = "flex";
-        }
-        
-        else if (portfolioItem.classList[0] === selectedFilter) { // Assumes class structure as described
+        } else if (portfolioItem.classList.contains(selectedFilter)) {
           portfolioItem.style.display = "flex";
         } else {
           portfolioItem.style.display = "none";
@@ -29,4 +24,29 @@ document.addEventListener("DOMContentLoaded", function () {
       });
     });
   });
+
+  filterItems.forEach((item) => {
+    const selectedFilter = item.classList[0];
+    const count = getProjectCount(selectedFilter);
+
+    const countSpan = item.querySelector(".badge");
+    if (countSpan) {
+      countSpan.textContent = count;
+    }
+  });
+
+  function getProjectCount(filterClass) {
+    let count = 0;
+
+    portfolioItems.forEach((portfolioItem) => {
+      if (
+        filterClass === "filter-all" ||
+        portfolioItem.classList.contains(filterClass)
+      ) {
+        count++;
+      }
+    });
+
+    return count;
+  }
 });

@@ -20,19 +20,11 @@
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Yatra+One&display=swap" rel="stylesheet">
 
-    <!-- 
-        npx tailwindcss -i ./src/input.css -o ./output.css --watch
-    -->
-
     <title>Rahul-Dutta/projects</title>
     <link rel="stylesheet" href="output.css">
     <style>
         * {
             font-family: 'Yatra One', cursive;
-        }
-
-        .active-filter {
-            color: #fa8231;
         }
 
         body {
@@ -42,20 +34,64 @@
         body::-webkit-scrollbar {
             display: none;
         }
+
+        .badge {
+            background-color: #fa8231;
+            color: white;
+            font-size: 16px;
+            width: 30px;
+            height: 30px;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            border-radius: 50%;
+            cursor: pointer;
+        }
+
+        .filters li {
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            padding: 5px 10px;
+            border-radius: 8px;
+            gap: 0.5rem;
+            border: 2px solid #ff5733;
+            transition: all 0.3s ease;
+            cursor: pointer;
+        }
+
+        .filters li.active-filter,
+        .filters li:hover {
+            color: white;
+            background-color: #fa8231;
+        }
+
+        .filters li.active-filter .badge,
+        .filters li:hover .badge {
+            color: #fa8231;
+            background-color: white;
+        }
     </style>
 </head>
+
+<!-- npx tailwindcss -i ./src/input.css -o ./output.css --watch -->
 
 <body class="overflow-scroll">
     <nav class="relative">
         <div class="fixed z-10 flex justify-center items-center text-center top-5 left-4">
             <a href="https://rahuldutta.netlify.app/"><i class='bx bxs-chevrons-left text-3xl text-white'></i></a>
         </div>
+
         <div class="navbar flex justify-center items-center p-6 bg-[#fa8231] fixed w-full">
             <div class="flex justify-center items-center">
                 <a href="./">
                     <h1 class="text-3xl font-bold text-white">My Projects</h1>
                 </a>
             </div>
+        </div>
+
+        <div class="fixed z-10 flex justify-center items-center text-center top-5 right-4">
+            <a href="https://rahuldutta.bio.link/" target="_blank" ><i class='bx bx-link-external text-3xl' style='color:white'></i></a>
         </div>
     </nav>
 
@@ -64,37 +100,324 @@
         <div class="portfolio-isotope">
 
             <div class="py-4 flex justify-center items-center">
-                <ul class="flex gap-4 px-4 flex-wrap portfolio-flters lowercase">
-                    <li class="filter-all text-xl active-filter cursor-pointer hover:text-orange-500">All</li>
-                    <li class="filter-html-css-js text-xl cursor-pointer animate-bounce hover:text-orange-500">
-                        HTML-CSS-JS</li>
-                    <li class="filter-html-css text-xl cursor-pointer hover:text-orange-500">HTML-CSS</li>
-                    <li class="filter-tailwind text-xl cursor-pointer animate-bounce hover:text-orange-500">Tailwind
+                <ul class="flex gap-4 px-4 flex-wrap portfolio-flters lowercase filters justify-center max-w-[65rem]">
+                    <li class="filter-all text-xl active-filter">
+                        All <span class="badge"></span>
                     </li>
-                    <li class="filter-bootstrap text-xl cursor-pointer hover:text-orange-500">Bootstrap</li>
-                    <li class="filter-java text-xl cursor-pointer hover:text-orange-500">Java</li>
-                    <li class="filter-ui-ux text-xl cursor-pointer  hover:text-orange-500">Ui-Ux</li>
+                    <li class="filter-html-css-js text-xl animate-pulse">
+                        HTML-CSS-JS <span class="badge"></span>
+                    </li>
+                    <li class="filter-html-css text-xl">
+                        HTML-CSS <span class="badge"></span>
+                    </li>
+                    <li class="filter-tailwind text-xl animate-pulse">
+                        Tailwind <span class="badge"></span>
+                    </li>
+                    <li class="filter-bootstrap text-xl">
+                        Bootstrap <span class="badge"></span>
+                    </li>
+                    <li class="filter-java text-xl">
+                        Java <span class="badge"></span>
+                    </li>
+                    <li class="filter-ui-ux text-xl">
+                        Ui-Ux <span class="badge"></span>
+                    </li>
                 </ul>
+            </div>
+
+            <div class="flex justify-center items-center">
+                <p id="project-count" class="text-orange-500 text-2xl"></p>
             </div>
 
             <div class="flex justify-center items-center py-8">
                 <div class="flex justify-center items-center gap-8 flex-wrap max-w-5xl portfolio-container">
 
+                    <!-- Sound Board -->
+                    <div
+                        class="filter-html-css-js max-w-[20rem] h-[28rem] bg-white border border-gray-200 rounded-lg shadow-xl dark:bg-gray-800 dark:border-gray-700 flex flex-col portfolio-item">
+
+                        <!-- TODO: Live Link -->
+                        <div>
+                            <a target="_blank"
+                                href="https://irahuldutta02.github.io/html-css-js-only-projects/009-sound-board/">
+
+                                <!-- TODO: Demo Image/GIF -->
+                                <img class="rounded-t-lg" src="https://i.postimg.cc/m2HNZH75/output.gif" alt="" />
+                            </a>
+                        </div>
+
+                        <div class="p-5 h-full flex flex-col justify-between">
+
+                            <div class="">
+                                <!-- TODO: Live Link -->
+                                <a target="_blank"
+                                    href="https://irahuldutta02.github.io/html-css-js-only-projects/009-sound-board/">
+                                    <!-- TODO: Title -->
+                                    <h5 class="mb-2 text-2xl font-bold tracking-tight text-gray-900 dark:text-white">
+                                        Sound Board</h5>
+                                </a>
+
+                                <!-- TODO: Description -->
+                                <p class="mb-3 font-normal text-gray-700 dark:text-gray-400 leading-7">
+                                    Using
+                                    &nbsp
+                                    <b class="bg-gray-700 text-white px-2 rounded-md">HTML</b>
+                                    &nbsp
+                                    <b class="bg-gray-700 text-white px-2 rounded-md">CSS</b>
+                                    &nbsp
+                                    <b class="bg-gray-700 text-white px-2 rounded-md">JS</b>
+                                    &nbsp
+                                </p>
+                                <p class="mb-3 font-normal text-gray-700 dark:text-gray-400 leading-7">
+                                    <u>JS</u>: DOM, Eventlisterner <br>
+                                </p>
+                            </div>
+
+                            <div class="flex justify-start items-center gap-4">
+
+                                <!-- TODO: Live Link -->
+                                <a target="_blank"
+                                    href="https://irahuldutta02.github.io/html-css-js-only-projects/009-sound-board/"
+                                    class="inline-flex items-center px-3 py-2 text-sm font-medium text-center text-white bg-[#fa8231] rounded-lg hover:bg-orange-800 focus:ring-4 focus:outline-none focus:ring-orange-300 dark:bg-orange-600 dark:hover:bg-[#fa8231] dark:focus:ring-orange-800">
+                                    <i class='bx bx-link-external text-xl'></i>
+                                </a>
+
+                                <!-- TODO: Code Link -->
+                                <a target="_blank"
+                                    href="https://github.com/irahuldutta02/html-css-js-only-projects/tree/main/009-sound-board/"
+                                    class="inline-flex items-center px-3 py-2 text-sm font-medium text-center text-white bg-[#fa8231] rounded-lg hover:bg-orange-800 focus:ring-4 focus:outline-none focus:ring-orange-300 dark:bg-orange-600 dark:hover:bg-[#fa8231] dark:focus:ring-orange-800">
+                                    <i class='bx bxl-github text-xl'></i>
+                                </a>
+
+                                <!-- TODO: Download Link -->
+                                <a target="_blank"
+                                    href="https://minhaskamal.github.io/DownGit/#/home?url=https://github.com/irahuldutta02/html-css-js-only-projects/tree/main/009-sound-board/"
+                                    class="inline-flex items-center px-3 py-2 text-sm font-medium text-center text-white bg-[#fa8231] rounded-lg hover:bg-orange-800 focus:ring-4 focus:outline-none focus:ring-orange-300 dark:bg-orange-600 dark:hover:bg-[#fa8231] dark:focus:ring-orange-800">
+                                    <i class='bx bx-cloud-download text-xl'></i>
+                                </a>
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- Form Input Wave -->
+                    <div
+                        class="filter-html-css-js max-w-[20rem] h-[28rem] bg-white border border-gray-200 rounded-lg shadow-xl dark:bg-gray-800 dark:border-gray-700 flex flex-col portfolio-item">
+
+                        <!-- TODO: Live Link -->
+                        <div>
+                            <a target="_blank"
+                                href="https://irahuldutta02.github.io/html-css-js-only-projects/008-form-wave-animation/">
+
+                                <!-- TODO: Demo Image/GIF -->
+                                <img class="rounded-t-lg" src="https://i.postimg.cc/wxSjzyqM/output.gif" alt="" />
+                            </a>
+                        </div>
+
+                        <div class="p-5 h-full flex flex-col justify-between">
+
+                            <div class="">
+                                <!-- TODO: Live Link -->
+                                <a target="_blank"
+                                    href="https://irahuldutta02.github.io/html-css-js-only-projects/008-form-wave-animation/">
+                                    <!-- TODO: Title -->
+                                    <h5 class="mb-2 text-2xl font-bold tracking-tight text-gray-900 dark:text-white">
+                                        Form Input Wave</h5>
+                                </a>
+
+                                <!-- TODO: Description -->
+                                <p class="mb-3 font-normal text-gray-700 dark:text-gray-400 leading-7">
+                                    Using
+                                    &nbsp
+                                    <b class="bg-gray-700 text-white px-2 rounded-md">HTML</b>
+                                    &nbsp
+                                    <b class="bg-gray-700 text-white px-2 rounded-md">CSS</b>
+                                    &nbsp
+                                    <b class="bg-gray-700 text-white px-2 rounded-md">JS</b>
+                                    &nbsp
+                                </p>
+                                <p class="mb-3 font-normal text-gray-700 dark:text-gray-400 leading-7">
+                                    <u>CSS</u>: Transition, Transform, Position <br>
+                                    <u>JS</u>: DOM, Map, Join, Split <br>
+                                </p>
+                            </div>
+
+                            <div class="flex justify-start items-center gap-4">
+
+                                <!-- TODO: Live Link -->
+                                <a target="_blank"
+                                    href="https://irahuldutta02.github.io/html-css-js-only-projects/008-form-wave-animation/"
+                                    class="inline-flex items-center px-3 py-2 text-sm font-medium text-center text-white bg-[#fa8231] rounded-lg hover:bg-orange-800 focus:ring-4 focus:outline-none focus:ring-orange-300 dark:bg-orange-600 dark:hover:bg-[#fa8231] dark:focus:ring-orange-800">
+                                    <i class='bx bx-link-external text-xl'></i>
+                                </a>
+
+                                <!-- TODO: Code Link -->
+                                <a target="_blank"
+                                    href="https://github.com/irahuldutta02/html-css-js-only-projects/tree/main/008-form-wave-animation/"
+                                    class="inline-flex items-center px-3 py-2 text-sm font-medium text-center text-white bg-[#fa8231] rounded-lg hover:bg-orange-800 focus:ring-4 focus:outline-none focus:ring-orange-300 dark:bg-orange-600 dark:hover:bg-[#fa8231] dark:focus:ring-orange-800">
+                                    <i class='bx bxl-github text-xl'></i>
+                                </a>
+
+                                <!-- TODO: Download Link -->
+                                <a target="_blank"
+                                    href="https://minhaskamal.github.io/DownGit/#/home?url=https://github.com/irahuldutta02/html-css-js-only-projects/tree/main/008-form-wave-animation/"
+                                    class="inline-flex items-center px-3 py-2 text-sm font-medium text-center text-white bg-[#fa8231] rounded-lg hover:bg-orange-800 focus:ring-4 focus:outline-none focus:ring-orange-300 dark:bg-orange-600 dark:hover:bg-[#fa8231] dark:focus:ring-orange-800">
+                                    <i class='bx bx-cloud-download text-xl'></i>
+                                </a>
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- Split Landing Page -->
+                    <div
+                        class="filter-html-css-js max-w-[20rem] h-[28rem] bg-white border border-gray-200 rounded-lg shadow-xl dark:bg-gray-800 dark:border-gray-700 flex flex-col portfolio-item">
+
+                        <!-- TODO: Live Link -->
+                        <div>
+                            <a target="_blank"
+                                href="https://irahuldutta02.github.io/html-css-js-only-projects/007-split-landing-page/">
+
+                                <!-- TODO: Demo Image/GIF -->
+                                <img class="rounded-t-lg" src="https://i.postimg.cc/DZ97dHmF/output.gif" alt="" />
+                            </a>
+                        </div>
+
+                        <div class="p-5 h-full flex flex-col justify-between">
+
+                            <div class="">
+                                <!-- TODO: Live Link -->
+                                <a target="_blank"
+                                    href="https://irahuldutta02.github.io/html-css-js-only-projects/007-split-landing-page/">
+                                    <!-- TODO: Title -->
+                                    <h5 class="mb-2 text-2xl font-bold tracking-tight text-gray-900 dark:text-white">
+                                        Split Landing Page</h5>
+                                </a>
+
+                                <!-- TODO: Description -->
+                                <p class="mb-3 font-normal text-gray-700 dark:text-gray-400 leading-7">
+                                    Using
+                                    &nbsp
+                                    <b class="bg-gray-700 text-white px-2 rounded-md">HTML</b>
+                                    &nbsp
+                                    <b class="bg-gray-700 text-white px-2 rounded-md">CSS</b>
+                                    &nbsp
+                                    <b class="bg-gray-700 text-white px-2 rounded-md">JS</b>
+                                    &nbsp
+                                </p>
+                                <p class="mb-3 font-normal text-gray-700 dark:text-gray-400 leading-7">
+                                    <u>CSS</u>: Transition, Transform, Position, Flex <br>
+                                    <u>JS</u>: DOM, Eventlistener <br>
+                                </p>
+                            </div>
+
+                            <div class="flex justify-start items-center gap-4">
+
+                                <!-- TODO: Live Link -->
+                                <a target="_blank"
+                                    href="https://irahuldutta02.github.io/html-css-js-only-projects/007-split-landing-page/"
+                                    class="inline-flex items-center px-3 py-2 text-sm font-medium text-center text-white bg-[#fa8231] rounded-lg hover:bg-orange-800 focus:ring-4 focus:outline-none focus:ring-orange-300 dark:bg-orange-600 dark:hover:bg-[#fa8231] dark:focus:ring-orange-800">
+                                    <i class='bx bx-link-external text-xl'></i>
+                                </a>
+
+                                <!-- TODO: Code Link -->
+                                <a target="_blank"
+                                    href="https://github.com/irahuldutta02/html-css-js-only-projects/tree/main/007-split-landing-page/"
+                                    class="inline-flex items-center px-3 py-2 text-sm font-medium text-center text-white bg-[#fa8231] rounded-lg hover:bg-orange-800 focus:ring-4 focus:outline-none focus:ring-orange-300 dark:bg-orange-600 dark:hover:bg-[#fa8231] dark:focus:ring-orange-800">
+                                    <i class='bx bxl-github text-xl'></i>
+                                </a>
+
+                                <!-- TODO: Download Link -->
+                                <a target="_blank"
+                                    href="https://minhaskamal.github.io/DownGit/#/home?url=https://github.com/irahuldutta02/html-css-js-only-projects/tree/main/007-split-landing-page/"
+                                    class="inline-flex items-center px-3 py-2 text-sm font-medium text-center text-white bg-[#fa8231] rounded-lg hover:bg-orange-800 focus:ring-4 focus:outline-none focus:ring-orange-300 dark:bg-orange-600 dark:hover:bg-[#fa8231] dark:focus:ring-orange-800">
+                                    <i class='bx bx-cloud-download text-xl'></i>
+                                </a>
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- Scroll Animation -->
+                    <div
+                        class="filter-html-css-js max-w-[20rem] h-[28rem] bg-white border border-gray-200 rounded-lg shadow-xl dark:bg-gray-800 dark:border-gray-700 flex flex-col portfolio-item">
+
+                        <!-- TODO: Live Link -->
+                        <div>
+                            <a target="_blank"
+                                href="https://irahuldutta02.github.io/html-css-js-only-projects/006-scroll-animation/">
+
+                                <!-- TODO: Demo Image/GIF -->
+                                <img class="rounded-t-lg" src="https://i.postimg.cc/QN9BQqBf/output.gif" alt="" />
+                            </a>
+                        </div>
+
+                        <div class="p-5 h-full flex flex-col justify-between">
+
+                            <div class="">
+                                <!-- TODO: Live Link -->
+                                <a target="_blank"
+                                    href="https://irahuldutta02.github.io/html-css-js-only-projects/006-scroll-animation/">
+                                    <!-- TODO: Title -->
+                                    <h5 class="mb-2 text-2xl font-bold tracking-tight text-gray-900 dark:text-white">
+                                        Scroll Animation</h5>
+                                </a>
+
+                                <!-- TODO: Description -->
+                                <p class="mb-3 font-normal text-gray-700 dark:text-gray-400 leading-7">
+                                    Using
+                                    &nbsp
+                                    <b class="bg-gray-700 text-white px-2 rounded-md">HTML</b>
+                                    &nbsp
+                                    <b class="bg-gray-700 text-white px-2 rounded-md">CSS</b>
+                                    &nbsp
+                                    <b class="bg-gray-700 text-white px-2 rounded-md">JS</b>
+                                    &nbsp
+                                </p>
+                                <p class="mb-3 font-normal text-gray-700 dark:text-gray-400 leading-7">
+                                    <u>CSS</u>: Transition, Transform <br>
+                                    <u>JS</u>: DOM, Eventlistener <br>
+                                </p>
+                            </div>
+
+                            <div class="flex justify-start items-center gap-4">
+
+                                <!-- TODO: Live Link -->
+                                <a target="_blank"
+                                    href="https://irahuldutta02.github.io/html-css-js-only-projects/006-scroll-animation/"
+                                    class="inline-flex items-center px-3 py-2 text-sm font-medium text-center text-white bg-[#fa8231] rounded-lg hover:bg-orange-800 focus:ring-4 focus:outline-none focus:ring-orange-300 dark:bg-orange-600 dark:hover:bg-[#fa8231] dark:focus:ring-orange-800">
+                                    <i class='bx bx-link-external text-xl'></i>
+                                </a>
+
+                                <!-- TODO: Code Link -->
+                                <a target="_blank"
+                                    href="https://github.com/irahuldutta02/html-css-js-only-projects/tree/main/006-scroll-animation/"
+                                    class="inline-flex items-center px-3 py-2 text-sm font-medium text-center text-white bg-[#fa8231] rounded-lg hover:bg-orange-800 focus:ring-4 focus:outline-none focus:ring-orange-300 dark:bg-orange-600 dark:hover:bg-[#fa8231] dark:focus:ring-orange-800">
+                                    <i class='bx bxl-github text-xl'></i>
+                                </a>
+
+                                <!-- TODO: Download Link -->
+                                <a target="_blank"
+                                    href="https://minhaskamal.github.io/DownGit/#/home?url=https://github.com/irahuldutta02/html-css-js-only-projects/tree/main/006-scroll-animation/"
+                                    class="inline-flex items-center px-3 py-2 text-sm font-medium text-center text-white bg-[#fa8231] rounded-lg hover:bg-orange-800 focus:ring-4 focus:outline-none focus:ring-orange-300 dark:bg-orange-600 dark:hover:bg-[#fa8231] dark:focus:ring-orange-800">
+                                    <i class='bx bx-cloud-download text-xl'></i>
+                                </a>
+                            </div>
+                        </div>
+                    </div>
 
                     <!-- Blurry Loading -->
                     <div
                         class="filter-html-css-js max-w-[20rem] h-[28rem] bg-white border border-gray-200 rounded-lg shadow-xl dark:bg-gray-800 dark:border-gray-700 flex flex-col portfolio-item">
-                    
+
                         <!-- TODO: Live Link -->
                         <div>
-                            <a target="_blank" href="https://irahuldutta02.github.io/html-css-js-only-projects/005-blurry-loading/">
+                            <a target="_blank"
+                                href="https://irahuldutta02.github.io/html-css-js-only-projects/005-blurry-loading/">
                                 <!-- TODO: Demo Image/GIF -->
                                 <img class="rounded-t-lg" src="https://i.postimg.cc/htKx8YdV/output.gif" alt="" />
                             </a>
                         </div>
-                    
+
                         <div class="p-5 h-full flex flex-col justify-between">
-                    
+
                             <div class="">
                                 <!-- TODO: Live Link -->
                                 <a target="_blank"
@@ -103,7 +426,7 @@
                                     <h5 class="mb-2 text-2xl font-bold tracking-tight text-gray-900 dark:text-white">
                                         Blurry Loading</h5>
                                 </a>
-                    
+
                                 <!-- TODO: Description -->
                                 <p class="mb-3 font-normal text-gray-700 dark:text-gray-400 leading-7">
                                     Using
@@ -120,23 +443,23 @@
                                     <u>JS</u>: DOM <br>
                                 </p>
                             </div>
-                    
+
                             <div class="flex justify-start items-center gap-4">
-                    
+
                                 <!-- TODO: Live Link -->
                                 <a target="_blank"
                                     href="https://irahuldutta02.github.io/html-css-js-only-projects/005-blurry-loading/"
                                     class="inline-flex items-center px-3 py-2 text-sm font-medium text-center text-white bg-[#fa8231] rounded-lg hover:bg-orange-800 focus:ring-4 focus:outline-none focus:ring-orange-300 dark:bg-orange-600 dark:hover:bg-[#fa8231] dark:focus:ring-orange-800">
                                     <i class='bx bx-link-external text-xl'></i>
                                 </a>
-                    
+
                                 <!-- TODO: Code Link -->
                                 <a target="_blank"
                                     href="https://github.com/irahuldutta02/html-css-js-only-projects/tree/main/005-blurry-loading/"
                                     class="inline-flex items-center px-3 py-2 text-sm font-medium text-center text-white bg-[#fa8231] rounded-lg hover:bg-orange-800 focus:ring-4 focus:outline-none focus:ring-orange-300 dark:bg-orange-600 dark:hover:bg-[#fa8231] dark:focus:ring-orange-800">
                                     <i class='bx bxl-github text-xl'></i>
                                 </a>
-                    
+
                                 <!-- TODO: Download Link -->
                                 <a target="_blank"
                                     href="https://minhaskamal.github.io/DownGit/#/home?url=https://github.com/irahuldutta02/html-css-js-only-projects/tree/main/005-blurry-loading/"
@@ -146,21 +469,22 @@
                             </div>
                         </div>
                     </div>
-                    
+
                     <!-- Hidden Search Widget -->
                     <div
                         class="filter-html-css-js max-w-[20rem] h-[28rem] bg-white border border-gray-200 rounded-lg shadow-xl dark:bg-gray-800 dark:border-gray-700 flex flex-col portfolio-item">
-                    
+
                         <!-- TODO: Live Link -->
                         <div>
-                            <a target="_blank" href="https://irahuldutta02.github.io/html-css-js-only-projects/004-hidden-search-widget/">
+                            <a target="_blank"
+                                href="https://irahuldutta02.github.io/html-css-js-only-projects/004-hidden-search-widget/">
                                 <!-- TODO: Demo Image/GIF -->
                                 <img class="rounded-t-lg" src="https://i.postimg.cc/FRZP9S3L/output.gif" alt="" />
                             </a>
                         </div>
-                    
+
                         <div class="p-5 h-full flex flex-col justify-between">
-                    
+
                             <div class="">
                                 <!-- TODO: Live Link -->
                                 <a target="_blank"
@@ -169,7 +493,7 @@
                                     <h5 class="mb-2 text-2xl font-bold tracking-tight text-gray-900 dark:text-white">
                                         Hidden Search Widget</h5>
                                 </a>
-                    
+
                                 <!-- TODO: Description -->
                                 <p class="mb-3 font-normal text-gray-700 dark:text-gray-400 leading-7">
                                     Using
@@ -186,22 +510,23 @@
                                     <u>JS</u>: DOM, Eventlistener <br>
                                 </p>
                             </div>
-                    
+
                             <div class="flex justify-start items-center gap-4">
-                    
+
                                 <!-- TODO: Live Link -->
-                                <a target="_blank" href="https://irahuldutta02.github.io/html-css-js-only-projects/004-hidden-search-widget/"
+                                <a target="_blank"
+                                    href="https://irahuldutta02.github.io/html-css-js-only-projects/004-hidden-search-widget/"
                                     class="inline-flex items-center px-3 py-2 text-sm font-medium text-center text-white bg-[#fa8231] rounded-lg hover:bg-orange-800 focus:ring-4 focus:outline-none focus:ring-orange-300 dark:bg-orange-600 dark:hover:bg-[#fa8231] dark:focus:ring-orange-800">
                                     <i class='bx bx-link-external text-xl'></i>
                                 </a>
-                    
+
                                 <!-- TODO: Code Link -->
                                 <a target="_blank"
                                     href="https://github.com/irahuldutta02/html-css-js-only-projects/tree/main/004-hidden-search-widget/"
                                     class="inline-flex items-center px-3 py-2 text-sm font-medium text-center text-white bg-[#fa8231] rounded-lg hover:bg-orange-800 focus:ring-4 focus:outline-none focus:ring-orange-300 dark:bg-orange-600 dark:hover:bg-[#fa8231] dark:focus:ring-orange-800">
                                     <i class='bx bxl-github text-xl'></i>
                                 </a>
-                    
+
                                 <!-- TODO: Download Link -->
                                 <a target="_blank"
                                     href="https://minhaskamal.github.io/DownGit/#/home?url=https://github.com/irahuldutta02/html-css-js-only-projects/tree/main/004-hidden-search-widget/"
@@ -210,30 +535,32 @@
                                 </a>
                             </div>
                         </div>
-                    </div>                   
-                    
+                    </div>
+
                     <!-- Rotating Navigation -->
                     <div
                         class="filter-html-css-js max-w-[20rem] h-[28rem] bg-white border border-gray-200 rounded-lg shadow-xl dark:bg-gray-800 dark:border-gray-700 flex flex-col portfolio-item">
-                    
+
                         <!-- TODO: Live Link -->
                         <div>
-                            <a target="_blank" href="https://irahuldutta02.github.io/html-css-js-only-projects/003-rotating-navigation/">
+                            <a target="_blank"
+                                href="https://irahuldutta02.github.io/html-css-js-only-projects/003-rotating-navigation/">
                                 <!-- TODO: Demo Image/GIF -->
                                 <img class="rounded-t-lg" src="https://i.postimg.cc/Pqvv4n2V/output.gif" alt="" />
                             </a>
                         </div>
-                    
+
                         <div class="p-5 h-full flex flex-col justify-between">
-                    
+
                             <div class="">
                                 <!-- TODO: Live Link -->
-                                <a target="_blank" href="https://irahuldutta02.github.io/html-css-js-only-projects/003-rotating-navigation/">
+                                <a target="_blank"
+                                    href="https://irahuldutta02.github.io/html-css-js-only-projects/003-rotating-navigation/">
                                     <!-- TODO: Title -->
                                     <h5 class="mb-2 text-2xl font-bold tracking-tight text-gray-900 dark:text-white">
                                         Rotating Navigation</h5>
                                 </a>
-                    
+
                                 <!-- TODO: Description -->
                                 <p class="mb-3 font-normal text-gray-700 dark:text-gray-400 leading-7">
                                     Using
@@ -250,22 +577,23 @@
                                     <u>JS</u>: DOM, Eventlistener <br>
                                 </p>
                             </div>
-                    
+
                             <div class="flex justify-start items-center gap-4">
-                    
+
                                 <!-- TODO: Live Link -->
-                                <a target="_blank" href="https://irahuldutta02.github.io/html-css-js-only-projects/003-rotating-navigation/"
+                                <a target="_blank"
+                                    href="https://irahuldutta02.github.io/html-css-js-only-projects/003-rotating-navigation/"
                                     class="inline-flex items-center px-3 py-2 text-sm font-medium text-center text-white bg-[#fa8231] rounded-lg hover:bg-orange-800 focus:ring-4 focus:outline-none focus:ring-orange-300 dark:bg-orange-600 dark:hover:bg-[#fa8231] dark:focus:ring-orange-800">
                                     <i class='bx bx-link-external text-xl'></i>
                                 </a>
-                    
+
                                 <!-- TODO: Code Link -->
                                 <a target="_blank"
                                     href="https://github.com/irahuldutta02/html-css-js-only-projects/tree/main/003-rotating-navigation/"
                                     class="inline-flex items-center px-3 py-2 text-sm font-medium text-center text-white bg-[#fa8231] rounded-lg hover:bg-orange-800 focus:ring-4 focus:outline-none focus:ring-orange-300 dark:bg-orange-600 dark:hover:bg-[#fa8231] dark:focus:ring-orange-800">
                                     <i class='bx bxl-github text-xl'></i>
                                 </a>
-                    
+
                                 <!-- TODO: Download Link -->
                                 <a target="_blank"
                                     href="https://minhaskamal.github.io/DownGit/#/home?url=https://github.com/irahuldutta02/html-css-js-only-projects/tree/main/003-rotating-navigation/"
@@ -346,25 +674,27 @@
                     <!-- expending-cards -->
                     <div
                         class="filter-html-css-js max-w-[20rem] h-[28rem] bg-white border border-gray-200 rounded-lg shadow-xl dark:bg-gray-800 dark:border-gray-700 flex flex-col portfolio-item">
-                    
+
                         <!-- TODO: Live Link -->
                         <div>
-                            <a target="_blank" href="https://irahuldutta02.github.io/html-css-js-only-projects/001-expanding-cards/">
+                            <a target="_blank"
+                                href="https://irahuldutta02.github.io/html-css-js-only-projects/001-expanding-cards/">
                                 <!-- TODO: Demo Image/GIF-->
                                 <img class="rounded-t-lg" src="https://i.postimg.cc/wj5MZNfY/output.gif" alt="" />
                             </a>
                         </div>
-                    
+
                         <div class="p-5 h-full flex flex-col justify-between">
-                    
+
                             <div class="">
                                 <!-- TODO: Live Link -->
-                                <a target="_blank" href="https://irahuldutta02.github.io/html-css-js-only-projects/001-expanding-cards/">
+                                <a target="_blank"
+                                    href="https://irahuldutta02.github.io/html-css-js-only-projects/001-expanding-cards/">
                                     <!-- TODO: Title -->
                                     <h5 class="mb-2 text-2xl font-bold tracking-tight text-gray-900 dark:text-white">
                                         Expending Cards</h5>
                                 </a>
-                    
+
                                 <!-- TODO: Description -->
                                 <p class="mb-3 font-normal text-gray-700 dark:text-gray-400 leading-7">
                                     Using
@@ -381,22 +711,23 @@
                                     <u>JS</u>: DOM, Eventlistener <br>
                                 </p>
                             </div>
-                    
+
                             <div class="flex justify-start items-center gap-4">
-                    
+
                                 <!-- TODO: Live Link -->
-                                <a target="_blank" href="https://irahuldutta02.github.io/html-css-js-only-projects/001-expanding-cards/"
+                                <a target="_blank"
+                                    href="https://irahuldutta02.github.io/html-css-js-only-projects/001-expanding-cards/"
                                     class="inline-flex items-center px-3 py-2 text-sm font-medium text-center text-white bg-[#fa8231] rounded-lg hover:bg-orange-800 focus:ring-4 focus:outline-none focus:ring-orange-300 dark:bg-orange-600 dark:hover:bg-[#fa8231] dark:focus:ring-orange-800">
                                     <i class='bx bx-link-external text-xl'></i>
                                 </a>
-                    
+
                                 <!-- TODO: Code Link -->
                                 <a target="_blank"
                                     href="https://github.com/irahuldutta02/html-css-js-only-projects/tree/main/001-expanding-cards/"
                                     class="inline-flex items-center px-3 py-2 text-sm font-medium text-center text-white bg-[#fa8231] rounded-lg hover:bg-orange-800 focus:ring-4 focus:outline-none focus:ring-orange-300 dark:bg-orange-600 dark:hover:bg-[#fa8231] dark:focus:ring-orange-800">
                                     <i class='bx bxl-github text-xl'></i>
                                 </a>
-                    
+
                                 <!-- TODO: Download Link -->
                                 <a target="_blank"
                                     href="https://minhaskamal.github.io/DownGit/#/home?url=https://github.com/irahuldutta02/html-css-js-only-projects/tree/main/001-expanding-cards/"
