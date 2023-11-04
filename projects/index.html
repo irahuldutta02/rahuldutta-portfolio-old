@@ -35,29 +35,17 @@
             display: none;
         }
 
-        .badge {
-            background-color: #fa8231;
-            color: white;
-            font-size: 16px;
-            width: 30px;
-            height: 30px;
-            display: flex;
-            justify-content: center;
-            align-items: center;
-            border-radius: 50%;
-            cursor: pointer;
-        }
-
         .filters li {
             display: flex;
             align-items: center;
             justify-content: center;
             padding: 5px 10px;
             border-radius: 8px;
-            gap: 0.5rem;
+            gap: 1rem;
             border: 2px solid #ff5733;
-            transition: all 0.3s ease;
+            transition: all 0.2s;
             cursor: pointer;
+            position: relative;
         }
 
         .filters li.active-filter,
@@ -66,11 +54,42 @@
             background-color: #fa8231;
         }
 
-        .filters li.active-filter .badge,
-        .filters li:hover .badge {
-            color: #fa8231;
-            background-color: white;
+        .badge {
+            background-color: #ffffff;
+            color: #ff5733;
+            border: 2px solid #ff5733;
+            font-size: 12px;
+            width: 25px;
+            height: 25px;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            border-radius: 50%;
+            cursor: pointer;
+            position: absolute;
+            top: -12px;
+            right: -12px;
         }
+
+        .badge-new{
+            background-color: #ff0000;
+            color: #ffffff;
+            font-size: 12px;
+            padding: 0 5px;
+            width: fit-content;
+            height: 20px;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            border-radius: 8px;
+            cursor: pointer;
+            position: absolute;
+            top: -15px;
+            right: 35%;
+            transform: rotate(-15deg);
+        }
+
+        
     </style>
 </head>
 
@@ -101,17 +120,18 @@
         <div class="portfolio-isotope">
 
             <div class="py-4 flex justify-center items-center">
-                <ul class="flex gap-4 px-4 flex-wrap portfolio-flters lowercase filters justify-center max-w-[90%]">
+                <ul class="flex gap-4 px-4 flex-wrap portfolio-flters lowercase filters justify-center max-w-[1538px]">
                     <li class="filter-all text-xl active-filter">
                         All <span class="badge"></span>
                     </li>
-                    <li class="filter-html-css-js text-xl animate-pulse">
+                    <li class="filter-html-css-js text-xl">
                         HTML-CSS-JS <span class="badge"></span>
+                        <span class="badge-new">New</span>
                     </li>
                     <li class="filter-html-css text-xl">
                         HTML-CSS <span class="badge"></span>
                     </li>
-                    <li class="filter-tailwind text-xl animate-pulse">
+                    <li class="filter-tailwind text-xl">
                         Tailwind <span class="badge"></span>
                     </li>
                     <li class="filter-bootstrap text-xl">
@@ -131,7 +151,7 @@
             </div>
 
             <div class="flex justify-center items-center py-8">
-                <div class="flex justify-center items-center gap-8 flex-wrap max-w-[90%] portfolio-container">
+                <div class="flex justify-center items-center gap-8 flex-wrap max-w-[1538px] portfolio-container">
 
                     <!-- FAQ Collapse -->
                     <div
