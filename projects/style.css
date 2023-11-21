@@ -166,7 +166,7 @@ nav a {
 }
 
 .project__item {
-  max-width: 20rem;
+  width: 20rem;
   height: 28rem;
   display: flex;
   justify-content: space-between;
