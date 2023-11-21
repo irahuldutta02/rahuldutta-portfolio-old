@@ -1,0 +1,247 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  outline: none;
+  font-family: "Yatra One", cursive;
+}
+
+:root {
+  --color1: #ff5733;
+  --color2: #fa8231;
+  --color3: #ff0000;
+  --color4: #1f2937;
+  --color5: #9ca3af;
+  --color6: #374151;
+}
+
+body {
+  scrollbar-width: none;
+}
+
+body::-webkit-scrollbar {
+  display: none;
+}
+
+nav {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background-color: var(--color1);
+  padding: 1rem;
+  position: fixed;
+  left: 0;
+  right: 0;
+  z-index: 1;
+}
+
+nav .icon {
+  cursor: pointer;
+}
+
+nav a {
+  text-decoration: none;
+  color: white;
+}
+
+.navigation {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  background-color: var(--color1);
+  width: 100%;
+  color: white;
+  font-size: 1.5rem;
+}
+
+.main {
+  padding: 7rem 0;
+}
+
+.container {
+  max-width: 96rem;
+  margin: auto;
+  padding: 1rem;
+}
+
+.filter {
+  z-index: -1;
+}
+
+.filter-items {
+  display: flex;
+  justify-content: center;
+  gap: 1rem;
+  flex-wrap: wrap;
+}
+
+.filter-item {
+  list-style: none;
+  padding: 0;
+}
+
+.filters li {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding: 5px 10px;
+  border-radius: 8px;
+  gap: 1rem;
+  border: 2px solid #ff5733;
+  transition: all 0.2s;
+  cursor: pointer;
+  position: relative;
+}
+
+.filters li.active,
+.filters li:hover {
+  color: white;
+  background-color: #fa8231;
+}
+
+.badge {
+  background-color: #ffffff;
+  color: #ff5733;
+  border: 2px solid #ff5733;
+  font-size: 12px;
+  width: 25px;
+  height: 25px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  border-radius: 50%;
+  cursor: pointer;
+  position: absolute;
+  top: -12px;
+  right: -12px;
+}
+
+.badge-new {
+  background-color: #ff0000;
+  color: #ffffff;
+  font-size: 12px;
+  padding: 0 5px;
+  width: fit-content;
+  height: 20px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  border-radius: 8px;
+  cursor: pointer;
+  position: absolute;
+  top: -15px;
+  right: 35%;
+  transform: rotate(-15deg);
+}
+
+.search__project__item {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding: 1rem;
+}
+
+.search__project__item .search {
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.search__project__item input {
+  height: 2.5rem;
+  width: 100%;
+  padding: 0 0.5rem;
+  border: 2px solid var(--color3);
+  border-radius: 10px;
+}
+
+.projects {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  align-items: center;
+  gap: 1.5rem;
+  padding-top: 2rem;
+}
+
+.project__item {
+  max-width: 20rem;
+  height: 28rem;
+  display: flex;
+  justify-content: space-between;
+  align-items: flex-start;
+  flex-direction: column;
+  background-color: var(--color4);
+  border: 2px solid var(--color4);
+  border-radius: 10px;
+  overflow: hidden;
+  box-shadow: 0 5px 15px rgba(0, 0, 0, 0.5);
+}
+
+.project__preview {
+  width: 100%;
+}
+
+.project__preview img {
+  width: 100%;
+  object-fit: cover;
+}
+
+.project__details {
+  flex: 1;
+  padding: 1rem;
+  color: white;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  color: var(--color5);
+}
+
+.project__head {
+  display: flex;
+  justify-content: space-between;
+  align-items: flex-start;
+  flex-direction: column;
+  gap: 0.5rem;
+}
+
+.project__title {
+  color: white;
+}
+
+.project__tech__stack {
+  background-color: var(--color6);
+  display: inline-flex;
+  padding: 0 0.5rem;
+  border-radius: 0.5rem;
+  justify-content: center;
+  align-items: center;
+  color: white;
+}
+
+.project__btns {
+  display: flex;
+  justify-content: flex-start;
+  align-items: center;
+  gap: 1rem;
+}
+
+.project__btn {
+  background-color: var(--color1);
+  padding: 0.8rem;
+  border-radius: 0.5rem;
+  color: white;
+  cursor: pointer;
+  font-size: 1rem;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  text-decoration: none;
+  width: 3rem;
+  height: 3rem;
+}
+
+.project__btn:hover {
+  background-color: var(--color2);
+}
