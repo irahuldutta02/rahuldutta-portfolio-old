@@ -1,22 +1,20 @@
 /* Created By Rahul Dutta */
 
 /* font */
-
-/* Capriola */
-/* @import url("https://fonts.googleapis.com/css2?family=Capriola&display=swap"); */
 /* Yatra One */
 @import url("https://fonts.googleapis.com/css2?family=Yatra+One&display=swap");
-
-
 
 * {
   margin: 0;
   padding: 0;
   box-sizing: border-box;
   text-decoration: none;
-  
-  /* font-family: "Capriola", sans-serif; */
   font-family: "Yatra One", cursive;
+  scroll-behavior: smooth;
+}
+
+html {
+  scroll-behavior: smooth;
 }
 
 body {
@@ -38,6 +36,7 @@ html {
 :root {
   --color: #fa8231;
   --color-2: #111;
+  --shadow-1: rgba(255, 255, 255, 0.9);
 }
 
 /* custom scroll bar */
@@ -76,14 +75,6 @@ section {
   padding-top: 150px;
 }
 
-/* .about,
-.services,
-.skills,
-.background,
-.contact,
-footer {
-  font-family: "Capriola", sans-serif;
-} */
 
 .about .about-content,
 .services .serv-content,
@@ -102,7 +93,6 @@ section .title {
   font-weight: 500;
   margin-bottom: 60px;
   padding-bottom: 20px;
-  /* font-family: "Capriola", sans-serif; */
 }
 
 section .title::before {
@@ -242,6 +232,9 @@ section .title::after {
   opacity: 0;
   pointer-events: none;
   transition: all 0.3s ease;
+  display: flex;
+  justify-content: center;
+  align-items: center;
 }
 
 .scroll-up-btn.show {
@@ -305,7 +298,7 @@ section .title::after {
   font-weight: 500;
 }
 
-.home-botton-div {
+.home-button-div {
   padding-top: 1rem;
   display: flex;
   flex-wrap: wrap;
@@ -314,7 +307,7 @@ section .title::after {
   gap: 1rem;
 }
 
-.home .home-content .home-botton {
+.home .home-content .home-button {
   display: flex;
   gap: 0.5rem;
   align-items: center;
@@ -327,11 +320,13 @@ section .title::after {
   border: 2px solid var(--color);
   transition: all 0.3s ease;
   width: fit-content;
+  box-shadow: rgba(0, 0, 0, 0.5) 5px 5px 0px;
 }
 
-.home .home-content .home-botton:hover {
+.home .home-content .home-button:hover {
   color: var(--color);
   background: none;
+  transform: scale(1.05);
 }
 
 /* about section styling */
@@ -350,22 +345,13 @@ section .title::after {
   border-radius: 5%;
   border: 4px solid var(--color);
   transition: all 0.3s ease;
-  box-shadow: rgba(0, 0, 0, 0.5) 0px 5px 15px;
+  box-shadow: rgba(0, 0, 0, 0.5) 5px 5px 0px;
   cursor: pointer;
-  /* animation: pulse-2 1.5s infinite; */
 }
 
-/* @keyframes pulse-2 {
-  0% {
-    transform: scale(1);
-  }
-  50% {
-    transform: scale(1.1);
-  }
-  100% {
-    transform: scale(1);
-  }
-} */
+.about .about-content .left img:hover {
+  transform: scale(1.05);
+}
 
 .about .about-content .right {
   width: 55%;
@@ -390,40 +376,25 @@ section .title::after {
   display: flex;
   flex-wrap: wrap;
   height: fit-content;
+  gap: 0.5rem;
 }
 
 .about-social-icons a {
-  margin-right: 10px;
+  height: 50px;
+  width: 50px;
+  border-radius: 50%;
+  transition: all 0.3s ease;
+  box-shadow: rgba(0, 0, 0, 0.5) 3px 3px 0px;
 }
 
 .about-social-icons a img {
   height: 50px;
   width: 50px;
   border-radius: 50%;
-  transition: all 0.3s ease;
-  box-shadow: rgba(0, 0, 0, 0.5) 0px 5px 15px;
   cursor: pointer;
 }
 
-.about-social-icons a img:hover {
-  animation: pulse-1 1s infinite;
-}
-
-@keyframes pulse-1 {
-  0% {
-    transform: scale(1);
-  }
-  50% {
-    transform: scale(1.2);
-  }
-  100% {
-    transform: scale(1);
-  }
-}
-
-/* social icons  */
-
-.about .about-content .right .about-botton {
+.about .about-content .right .about-button {
   display: flex;
   gap: 0.5rem;
   align-items: center;
@@ -437,11 +408,13 @@ section .title::after {
   border-radius: 3rem;
   border: 2px solid var(--color);
   transition: all 0.3s ease;
+  box-shadow: rgba(0, 0, 0, 0.5) 5px 5px 0px;
 }
 
 .about .about-content .right a:hover {
   color: var(--color);
   background: none;
+  transform: scale(1.05);
 }
 
 /* services section styling */
@@ -449,6 +422,9 @@ section .title::after {
 .background {
   color: #fff;
   background: var(--color-2);
+}
+.services .serv-content{
+  gap: 1rem;
 }
 
 .serv-content a {
@@ -475,11 +451,12 @@ section .title::after {
   cursor: pointer;
   transition: all 0.5s ease;
   height: 17rem;
-  width: 22rem;
+  width: 20rem;
   margin: 0.7rem;
   display: flex;
   justify-content: center;
   align-items: center;
+  box-shadow: var(--shadow-1) 5px 5px 0px;
 }
 
 .services .serv-content .card div {
@@ -498,7 +475,7 @@ section .title::after {
   transition: all 0.3s ease;
 }
 
-.services .serv-content .card:hover .box {
+.services .serv-content .card:hover {
   transform: scale(1.05);
 }
 
@@ -554,15 +531,17 @@ section .title::after {
   font-weight: 500;
   border-radius: 6px;
   border: 2px solid var(--color);
-  transition: all 0.8s ease;
+  transition: all 0.3s ease;
   width: 150px;
   height: 30px;
+  box-shadow: rgba(0, 0, 0, 0.5) 5px 5px 0px;
 }
 
 .skills .skills-content .column .inside-coloum div:hover {
   color: var(--color);
   background: none;
   cursor: pointer;
+  transform: scale(1.05);
 }
 
 .skills .skills-content .column .inside-coloum div span {
@@ -599,18 +578,19 @@ section .title::after {
   border: 3px solid var(--color);
   border-radius: 2rem;
   transition: all 0.3s ease;
-
-  /* min-height: 20rem; */
   max-width: 25rem;
   padding: 3rem 0.5rem;
-
   display: flex;
   flex-direction: column;
   justify-content: center;
   align-items: center;
   gap: 1rem;
-  /* box-shadow: var(--color) 0px 5px 15px; */
-  box-shadow: 0 0 1rem var(--color);
+  transition: all 0.3s ease;
+  box-shadow: var(--shadow-1) 5px 5px 0px;
+}
+
+.background .box-container .box:hover {
+  transform: scale(1.05);
 }
 
 .background .box-container .box .bg-txt-div {
@@ -632,7 +612,12 @@ section .title::after {
   border: 3px solid var(--color);
   border-radius: 5rem;
   padding: 0.5rem 2.5rem;
-  box-shadow: 0 0 0.5rem var(--color);
+  transition: all 0.3s ease;
+  box-shadow: var(--shadow-1) 4px 4px 0px;
+}
+
+.background .box-container .box .bg-year-div:hover {
+  transform: scale(1.05);
 }
 
 .background .box-container .box h3 {
@@ -662,7 +647,12 @@ section .title::after {
   justify-content: center;
   align-items: center;
   border: 3px solid var(--color);
-  box-shadow: 0 0 0.5rem var(--color);
+  transition: all 0.3s ease;
+  box-shadow: var(--shadow-1) 4px 4px 0px;
+}
+
+.bg-icon-img-div:hover {
+  transform: scale(1.05);
 }
 
 .bg-icon-img-div img {
@@ -719,7 +709,6 @@ section .title::after {
 /* form  */
 
 .form-style-6 {
-  /* font-family: "Capriola", sans-serif; */
   max-width: 100%;
   margin: 10px auto;
   padding: 25px;
@@ -727,6 +716,12 @@ section .title::after {
   border-radius: 10px;
   text-align: center;
   font-size: larger;
+  box-shadow: rgba(0, 0, 0, 0.5) 5px 5px 0px;
+  transition: all 0.3s ease;
+}
+
+.form-style-6:hover {
+  transform: scale(1.05);
 }
 
 .form-style-6 .text {
@@ -745,6 +740,7 @@ section .title::after {
   background-color: white;
   display: inline-block;
   animation: pulse 1.5s infinite;
+  box-shadow: rgba(0, 0, 0, 0.5) 5px 5px 0px;
 }
 
 @keyframes pulse {
@@ -779,8 +775,8 @@ section .title::after {
   border: 1px solid #ccc;
   padding: 3%;
   color: #555;
-  /* font-family: "Capriola", sans-serif; */
   border-radius: 10px;
+  transition: all 0.3s ease;
 }
 
 #form-alert {
@@ -798,9 +794,10 @@ section .title::after {
 .form-style-6 input[type="url"]:focus,
 .form-style-6 textarea:focus,
 .form-style-6 select:focus {
-  box-shadow: 0 0 5px #000000;
+  box-shadow: rgba(0, 0, 0, 0.5) 5px 5px 0px;
   padding: 3%;
   border: 1px solid var(--color);
+  scale: 1.05;
 }
 
 .form-style-6 textarea {
@@ -823,9 +820,10 @@ section .title::after {
 
 .form-style-6 input[type="submit"]:hover {
   background: var(--color);
-  box-shadow: rgba(0, 0, 0, 0.5) 0px 5px 15px;
+  box-shadow: rgba(0, 0, 0, 0.5) 5px 5px 0px;
   color: #000000;
   cursor: pointer;
+  transform: scale(1.05);
 }
 
 /* footer section styling */

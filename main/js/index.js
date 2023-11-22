@@ -1,5 +1,6 @@
 // Created By Rahul Dutta 
 
+// jquery
 $(document).ready(function () {
   $(window).scroll(function () {
     // sticky navbar on scroll script
@@ -50,6 +51,7 @@ $(document).ready(function () {
     loop: true,
   });
 });
+
 
 
 function validateForm() {
