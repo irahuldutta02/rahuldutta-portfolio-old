@@ -1,5 +1,15 @@
 [
   {
+    "title": "Random Password",
+    "filter": ["html-css-js"],
+    "preview": "https://i.postimg.cc/mkcQj6FT/output.gif",
+    "techStack": ["HTML", "CSS", "JS"],
+    "note": "JS: DOM, EventListener",
+    "livePreview": "https://irahuldutta02.github.io/html-css-js-only-projects/031-random-password/",
+    "code": "https://github.com/irahuldutta02/html-css-js-only-projects/tree/main/031-random-password/",
+    "download": "https://minhaskamal.github.io/DownGit/#/home?url=https://github.com/irahuldutta02/html-css-js-only-projects/tree/main/031-random-password/"
+  },
+  {
     "title": "Auto Text Effect",
     "filter": ["html-css-js"],
     "preview": "https://i.postimg.cc/nLp6YcPM/output.gif",
