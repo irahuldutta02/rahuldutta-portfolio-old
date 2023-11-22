@@ -27,12 +27,13 @@ nav {
   display: flex;
   justify-content: center;
   align-items: center;
-  background-color: var(--color1);
+  background-color: var(--color2);
   padding: 1rem;
   position: fixed;
   left: 0;
   right: 0;
   z-index: 1;
+  box-shadow: 0px 2px 10px rgba(0, 0, 0, 0.7);
 }
 
 nav .icon {
@@ -48,10 +49,15 @@ nav a {
   display: flex;
   justify-content: space-between;
   align-items: center;
-  background-color: var(--color1);
+  background-color: var(--color2);
   width: 100%;
   color: white;
+  font-size: 1rem;
+}
+
+.nav__item h1 {
   font-size: 1.5rem;
+  font-weight: 400;
 }
 
 .main {
@@ -88,7 +94,7 @@ nav a {
   border-radius: 8px;
   gap: 1rem;
   border: 2px solid #ff5733;
-  transition: all 0.2s;
+  transition: all 0.3s;
   cursor: pointer;
   position: relative;
 }
@@ -97,6 +103,7 @@ nav a {
 .filters li:hover {
   color: white;
   background-color: #fa8231;
+  box-shadow: 3px 3px 0px rgba(0, 0, 0, 0.7);
 }
 
 .badge {
@@ -114,6 +121,7 @@ nav a {
   position: absolute;
   top: -12px;
   right: -12px;
+  box-shadow: 2px 2px 0px rgba(0, 0, 0, 0.7);
 }
 
 .badge-new {
@@ -132,6 +140,7 @@ nav a {
   top: -15px;
   right: 35%;
   transform: rotate(-15deg);
+  box-shadow: 2px 2px 0px rgba(0, 0, 0, 0.7);
 }
 
 .search__project__item {
@@ -142,7 +151,7 @@ nav a {
 }
 
 .search__project__item .search {
-  width: 100%;
+  width: 20rem;
   display: flex;
   justify-content: center;
   align-items: center;
@@ -154,6 +163,25 @@ nav a {
   padding: 0 0.5rem;
   border: 2px solid var(--color3);
   border-radius: 10px;
+  transition: all 0.3s;
+  cursor: pointer;
+}
+
+.search__project__item input:focus,
+.search__project__item input:hover {
+  background-color: var(--color2);
+  color: white;
+  box-shadow: 3px 3px 0px rgba(0, 0, 0, 0.7);
+}
+
+::placeholder{
+  color: black;
+  transition: all 0.3s;
+}
+
+.search__project__item input:focus::placeholder,
+.search__project__item input:hover::placeholder{
+  color: white;
 }
 
 .projects {
@@ -176,7 +204,12 @@ nav a {
   border: 2px solid var(--color4);
   border-radius: 10px;
   overflow: hidden;
-  box-shadow: 0 5px 15px rgba(0, 0, 0, 0.5);
+  box-shadow: 7px 7px 0px rgba(0, 0, 0, 0.7);
+}
+
+.project__item:hover {
+  transform: scale(1.05);
+  transition: all 0.2s;
 }
 
 .project__preview {
@@ -228,7 +261,7 @@ nav a {
 }
 
 .project__btn {
-  background-color: var(--color1);
+  background-color: var(--color2);
   padding: 0.8rem;
   border-radius: 0.5rem;
   color: white;
@@ -242,6 +275,11 @@ nav a {
   height: 3rem;
 }
 
+.project__btn:focus {
+  outline: none;
+  transform: scale(0.95);
+}
+
 .project__btn:hover {
-  background-color: var(--color2);
+  background-color: var(--color1);
 }
