@@ -1,5 +1,15 @@
 [
   {
+    "title": "Good, Cheap, Fast",
+    "filter": ["html-css-js"],
+    "preview": "https://i.postimg.cc/y658dVDY/output.gif",
+    "techStack": ["HTML", "CSS", "JS"],
+    "note": "JS: DOM, EventListener",
+    "livePreview": "https://irahuldutta02.github.io/html-css-js-only-projects/032-good-cheap-fast/",
+    "code": "https://github.com/irahuldutta02/html-css-js-only-projects/tree/main/032-good-cheap-fast/",
+    "download": "https://minhaskamal.github.io/DownGit/#/home?url=https://github.com/irahuldutta02/html-css-js-only-projects/tree/main/032-good-cheap-fast/"
+  },
+  {
     "title": "Random Password",
     "filter": ["html-css-js"],
     "preview": "https://i.postimg.cc/mkcQj6FT/output.gif",
