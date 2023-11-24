@@ -70,6 +70,7 @@ nav a {
   padding: 1rem;
 }
 
+/* filter */
 .filter {
   z-index: -1;
 }
@@ -143,6 +144,8 @@ nav a {
   box-shadow: 2px 2px 0px rgba(0, 0, 0, 0.7);
 }
 
+
+/* search */
 .search__project__item {
   display: flex;
   justify-content: center;
@@ -184,6 +187,26 @@ nav a {
   color: white;
 }
 
+/* project count */
+.project__count__div{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  min-height: 1.8rem;
+}
+
+.project__count__div p{
+  text-align: center;
+  font-size: 1.2rem;
+  font-weight: 400;
+  text-transform: uppercase;
+}
+
+.project__count__div P > * {
+  display: none;
+}
+
+/* projects */
 .projects {
   display: flex;
   flex-wrap: wrap;
