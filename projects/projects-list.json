@@ -1,5 +1,15 @@
 [
   {
+    "title": "Notes App",
+    "filter": ["html-css-js"],
+    "preview": "https://i.postimg.cc/htkBSkKy/output.gif",
+    "techStack": ["HTML", "CSS", "JS"],
+    "note": "JS: DOM, EventListener, LocalStorage, JSON parsing,  Marked library",
+    "livePreview": "https://irahuldutta02.github.io/html-css-js-only-projects/033-notes-app/",
+    "code": "https://github.com/irahuldutta02/html-css-js-only-projects/tree/main/033-notes-app/",
+    "download": "https://minhaskamal.github.io/DownGit/#/home?url=https://github.com/irahuldutta02/html-css-js-only-projects/tree/main/033-notes-app/"
+  },
+  {
     "title": "Good, Cheap, Fast",
     "filter": ["html-css-js"],
     "preview": "https://i.postimg.cc/y658dVDY/output.gif",
