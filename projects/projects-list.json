@@ -1,7 +1,7 @@
 [
   {
     "title": "Notes App",
-    "filter": ["html-css-js"],
+    "filter": ["javascript", "css", "html"],
     "preview": "https://i.postimg.cc/htkBSkKy/output.gif",
     "techStack": ["HTML", "CSS", "JS"],
     "note": "JS: DOM, EventListener, LocalStorage, JSON parsing,  Marked library",
@@ -11,7 +11,7 @@
   },
   {
     "title": "Good, Cheap, Fast",
-    "filter": ["html-css-js"],
+    "filter": ["javascript", "css", "html"],
     "preview": "https://i.postimg.cc/y658dVDY/output.gif",
     "techStack": ["HTML", "CSS", "JS"],
     "note": "JS: DOM, EventListener",
@@ -21,7 +21,7 @@
   },
   {
     "title": "Random Password",
-    "filter": ["html-css-js"],
+    "filter": ["javascript", "css", "html"],
     "preview": "https://i.postimg.cc/mkcQj6FT/output.gif",
     "techStack": ["HTML", "CSS", "JS"],
     "note": "JS: DOM, EventListener",
@@ -31,7 +31,7 @@
   },
   {
     "title": "Auto Text Effect",
-    "filter": ["html-css-js"],
+    "filter": ["javascript", "css", "html"],
     "preview": "https://i.postimg.cc/nLp6YcPM/output.gif",
     "techStack": ["HTML", "CSS", "JS"],
     "note": "JS: DOM, EventListener",
@@ -41,7 +41,7 @@
   },
   {
     "title": "Double Click Heart",
-    "filter": ["html-css-js"],
+    "filter": ["javascript", "css", "html"],
     "preview": "https://i.postimg.cc/k4y867sc/output.gif",
     "techStack": ["HTML", "CSS", "JS"],
     "note": "CSS: Animations, Transform</br>JS: DOM, EventListener",
@@ -51,7 +51,7 @@
   },
   {
     "title": "GitHub Profiles",
-    "filter": ["html-css-js"],
+    "filter": ["javascript", "css", "html"],
     "preview": "https://i.postimg.cc/d1Dgc08M/output.gif",
     "techStack": ["HTML", "CSS", "JS"],
     "note": "JS: DOM, EventListener, Axios, GitHub Api",
@@ -61,7 +61,7 @@
   },
   {
     "title": "Toast Notification",
-    "filter": ["html-css-js"],
+    "filter": ["javascript", "css", "html"],
     "preview": "https://i.postimg.cc/6q3jTZ1y/output.gif",
     "techStack": ["HTML", "CSS", "JS"],
     "note": "CSS: Position</br>JS: DOM, EventListener, SetTimeout",
@@ -71,7 +71,7 @@
   },
   {
     "title": "Vertical Slider",
-    "filter": ["html-css-js"],
+    "filter": ["javascript", "css", "html"],
     "preview": "https://i.postimg.cc/L5D38Vsz/output.gif",
     "techStack": ["HTML", "CSS", "JS"],
     "note": "CSS: Position, Transform, Translate</br>JS: DOM, EventListener",
@@ -81,7 +81,7 @@
   },
   {
     "title": "Sticky Navbar",
-    "filter": ["html-css-js"],
+    "filter": ["javascript", "css", "html"],
     "preview": "https://i.postimg.cc/pr6QqNjh/output.gif",
     "techStack": ["HTML", "CSS", "JS"],
     "note": "CSS: Position</br>JS: DOM, EventListener",
@@ -91,7 +91,7 @@
   },
   {
     "title": "Content Placeholder",
-    "filter": ["html-css-js"],
+    "filter": ["javascript", "css", "html"],
     "preview": "https://i.postimg.cc/CMmnz3C0/output.gif",
     "techStack": ["HTML", "CSS", "JS"],
     "note": "CSS: Animation</br>JS: DOM, SetTimeout",
@@ -101,7 +101,7 @@
   },
   {
     "title": "Kinetic CSS Loader",
-    "filter": ["html-css"],
+    "filter": ["css", "html"],
     "preview": "https://i.postimg.cc/26ytJCWq/output.gif",
     "techStack": ["HTML", "CSS"],
     "note": "CSS: Animation",
@@ -111,7 +111,7 @@
   },
   {
     "title": "Draw App",
-    "filter": ["html-css-js"],
+    "filter": ["javascript", "css", "html"],
     "preview": "https://i.postimg.cc/XYDQVfhh/output.gif",
     "techStack": ["HTML", "CSS", "JS"],
     "note": "HTML: Canvas</br>JS: DOM, EventListener",
@@ -121,7 +121,7 @@
   },
   {
     "title": "Drag N Drop",
-    "filter": ["html-css-js"],
+    "filter": ["javascript", "css", "html"],
     "preview": "https://i.postimg.cc/zXNhhLVL/output.gif",
     "techStack": ["HTML", "CSS", "JS"],
     "note": "JS: DOM, EventListener",
@@ -131,7 +131,7 @@
   },
   {
     "title": "Button Ripple Effect",
-    "filter": ["html-css-js"],
+    "filter": ["javascript", "css", "html"],
     "preview": "https://i.postimg.cc/SNyf62HY/output.gif",
     "techStack": ["HTML", "CSS", "JS"],
     "note": "JS: DOM, EventListener</br>CSS: Position",
@@ -141,7 +141,7 @@
   },
   {
     "title": "Theme Clock",
-    "filter": ["html-css-js"],
+    "filter": ["javascript", "css", "html"],
     "preview": "https://i.postimg.cc/TwWgkM4b/output.gif",
     "techStack": ["HTML", "CSS", "JS"],
     "note": "JS: DOM, EventListener, Date</br>CSS: Transition, Transform",
@@ -151,7 +151,7 @@
   },
   {
     "title": "Background Slider",
-    "filter": ["html-css-js"],
+    "filter": ["javascript", "css", "html"],
     "preview": "https://i.postimg.cc/sg8bPqnk/output.gif",
     "techStack": ["HTML", "CSS", "JS"],
     "note": "JS: DOM, EventListener</br>CSS: Transition",
@@ -161,7 +161,7 @@
   },
   {
     "title": "Movie App",
-    "filter": ["html-css-js"],
+    "filter": ["javascript", "css", "html"],
     "preview": "https://i.postimg.cc/4dvShYk2/output.gif",
     "techStack": ["HTML", "CSS", "JS"],
     "note": "JS: DOM, EventListener, Fetch, Async-Await, Api Handling</br>CSS: Transition",
@@ -171,7 +171,7 @@
   },
   {
     "title": "Drink Water",
-    "filter": ["html-css-js"],
+    "filter": ["javascript", "css", "html"],
     "preview": "https://i.postimg.cc/6pk1wZ6n/output.gif",
     "techStack": ["HTML", "CSS", "JS"],
     "note": "JS: DOM, EventListener</br>CSS: Transition",
@@ -181,7 +181,7 @@
   },
   {
     "title": "Increment Counter",
-    "filter": ["html-css-js"],
+    "filter": ["javascript", "css", "html"],
     "preview": "https://i.postimg.cc/cHnBsXct/output.gif",
     "techStack": ["HTML", "CSS", "JS"],
     "note": "JS: DOM, EventListener, Coercion, SeTimeout</br>CSS: Transition, Transform",
@@ -191,7 +191,7 @@
   },
   {
     "title": "Animated Navigation",
-    "filter": ["html-css-js"],
+    "filter": ["javascript", "css", "html"],
     "preview": "https://i.postimg.cc/F1tF5rsL/output.gif",
     "techStack": ["HTML", "CSS", "JS"],
     "note": "JS: DOM, EventListener; CSS: Transition, Transform",
@@ -201,7 +201,7 @@
   },
   {
     "title": "Random Choice Picker",
-    "filter": ["html-css-js"],
+    "filter": ["javascript", "css", "html"],
     "preview": "https://i.postimg.cc/3Jj2mzxN/output.gif",
     "techStack": ["HTML", "CSS", "JS"],
     "note": "JS: DOM, EventListener, SetTimeout, SetInterval",
@@ -211,7 +211,7 @@
   },
   {
     "title": "FAQ Collapse",
-    "filter": ["html-css-js"],
+    "filter": ["javascript", "css", "html"],
     "preview": "https://i.postimg.cc/rFQLJcQY/output.gif",
     "techStack": ["HTML", "CSS", "JS"],
     "note": "JS: DOM, EventListener",
@@ -221,7 +221,7 @@
   },
   {
     "title": "Event Key Codes",
-    "filter": ["html-css-js"],
+    "filter": ["javascript", "css", "html"],
     "preview": "https://i.postimg.cc/SxWJsBgQ/output.gif",
     "techStack": ["HTML", "CSS", "JS"],
     "note": "JS: DOM, EventListener",
@@ -231,7 +231,7 @@
   },
   {
     "title": "Dad Jokes",
-    "filter": ["html-css-js"],
+    "filter": ["javascript", "css", "html"],
     "preview": "https://i.postimg.cc/qRCfBTGj/output.gif",
     "techStack": ["HTML", "CSS", "JS"],
     "note": "JS: DOM, EventListener, Fetch, Async-await, Promises",
@@ -241,7 +241,7 @@
   },
   {
     "title": "Sound Board",
-    "filter": ["html-css-js"],
+    "filter": ["javascript", "css", "html"],
     "preview": "https://i.postimg.cc/m2HNZH75/output.gif",
     "techStack": ["HTML", "CSS", "JS"],
     "note": "JS: DOM, EventListener",
@@ -251,7 +251,7 @@
   },
   {
     "title": "Form Input Wave",
-    "filter": ["html-css-js"],
+    "filter": ["javascript", "css", "html"],
     "preview": "https://i.postimg.cc/wxSjzyqM/output.gif",
     "techStack": ["HTML", "CSS", "JS"],
     "note": "CSS: Transition, Transform, Position</br>JS: DOM, Map, Join, Split",
@@ -261,7 +261,7 @@
   },
   {
     "title": "Split Landing Page",
-    "filter": ["html-css-js"],
+    "filter": ["javascript", "css", "html"],
     "preview": "https://i.postimg.cc/DZ97dHmF/output.gif",
     "techStack": ["HTML", "CSS", "JS"],
     "note": "CSS: Transition, Transform, Position, Flex</br>JS: DOM, Eventlistener",
@@ -271,7 +271,7 @@
   },
   {
     "title": "Scroll Animation",
-    "filter": ["html-css-js"],
+    "filter": ["javascript", "css", "html"],
     "preview": "https://i.postimg.cc/QN9BQqBf/output.gif",
     "techStack": ["HTML", "CSS", "JS"],
     "note": "CSS: Transition, Transform</br>JS: DOM, Eventlistener",
@@ -281,7 +281,7 @@
   },
   {
     "title": "Blurry Loading",
-    "filter": ["html-css-js"],
+    "filter": ["javascript", "css", "html"],
     "preview": "https://i.postimg.cc/htKx8YdV/output.gif",
     "techStack": ["HTML", "CSS", "JS"],
     "note": "CSS: Scale, Opacity, Blur, Filter</br>JS: DOM",
@@ -291,7 +291,7 @@
   },
   {
     "title": "Hidden Search Widget",
-    "filter": ["html-css-js"],
+    "filter": ["javascript", "css", "html"],
     "preview": "https://i.postimg.cc/FRZP9S3L/output.gif",
     "techStack": ["HTML", "CSS", "JS"],
     "note": "CSS: Transition, Transform</br>JS: DOM, Eventlistener",
@@ -301,7 +301,7 @@
   },
   {
     "title": "Rotating Navigation",
-    "filter": ["html-css-js"],
+    "filter": ["javascript", "css", "html"],
     "preview": "https://i.postimg.cc/Pqvv4n2V/output.gif",
     "techStack": ["HTML", "CSS", "JS"],
     "note": "CSS: Transition, Transform</br>JS: DOM, Eventlistener",
@@ -311,7 +311,7 @@
   },
   {
     "title": "Progress Steps",
-    "filter": ["html-css-js"],
+    "filter": ["javascript", "css", "html"],
     "preview": "https://i.postimg.cc/qqG5644F/output.gif",
     "techStack": ["HTML", "CSS", "JS"],
     "note": "CSS: Transition, Transform</br>JS: DOM, Eventlistener",
@@ -321,7 +321,7 @@
   },
   {
     "title": "Expanding Cards",
-    "filter": ["html-css-js"],
+    "filter": ["javascript", "css", "html"],
     "preview": "https://i.postimg.cc/wj5MZNfY/output.gif",
     "techStack": ["HTML", "CSS", "JS"],
     "note": "CSS: Transition</br>JS: DOM, Eventlistener",
@@ -331,7 +331,7 @@
   },
   {
     "title": "One Card Clone",
-    "filter": ["html-css"],
+    "filter": ["css", "html"],
     "preview": "https://i.postimg.cc/qvbTLQc7/one-card-clone.gif",
     "techStack": ["HTML", "CSS"],
     "note": "",
@@ -341,7 +341,7 @@
   },
   {
     "title": "Liquid Landing Page",
-    "filter": ["tailwind"],
+    "filter": ["tailwind", "html"],
     "preview": "https://i.postimg.cc/Ls2HChwy/liquid-landing-page.gif",
     "techStack": ["Tailwind CSS"],
     "note": "",
@@ -351,7 +351,7 @@
   },
   {
     "title": "Trafalgar Landing Page",
-    "filter": ["tailwind"],
+    "filter": ["tailwind", "html"],
     "preview": "https://i.postimg.cc/pTnRy8FL/trafalgar-landing-page.gif",
     "techStack": ["Tailwind CSS"],
     "note": "",
@@ -361,7 +361,7 @@
   },
   {
     "title": "Farmman Login Page",
-    "filter": ["tailwind"],
+    "filter": ["tailwind", "html"],
     "preview": "https://i.postimg.cc/WzMWHpQn/farman-login-page.gif",
     "techStack": ["Tailwind CSS"],
     "note": "",
@@ -371,7 +371,7 @@
   },
   {
     "title": "Pricing Card",
-    "filter": ["tailwind"],
+    "filter": ["tailwind", "html"],
     "preview": "https://i.postimg.cc/1tSNK9rP/pricing-card-tailwind.gif",
     "techStack": ["Tailwind CSS"],
     "note": "",
@@ -381,7 +381,7 @@
   },
   {
     "title": "Calculator",
-    "filter": ["html-css-js"],
+    "filter": ["javascript", "css", "html"],
     "preview": "https://i.postimg.cc/sDmKQLyv/calculator.gif",
     "techStack": ["HTML", "CSS", "JS"],
     "note": "",
@@ -391,7 +391,7 @@
   },
   {
     "title": "TO DO LIST",
-    "filter": ["html-css-js"],
+    "filter": ["javascript", "css", "html"],
     "preview": "https://i.postimg.cc/L8ZYKqy2/to-do-list.gif",
     "techStack": ["HTML", "CSS", "JS"],
     "note": "",
@@ -401,7 +401,7 @@
   },
   {
     "title": "Unit Converter",
-    "filter": ["html-css-js"],
+    "filter": ["javascript", "css", "html"],
     "preview": "https://i.postimg.cc/FRFHR1xf/unit-converter.gif",
     "techStack": ["HTML", "CSS", "JS"],
     "note": "",
@@ -411,7 +411,7 @@
   },
   {
     "title": "Tindog Landing Page",
-    "filter": ["bootstrap"],
+    "filter": ["bootstrap", "html"],
     "preview": "https://i.postimg.cc/25GCPrfC/tindog.gif",
     "techStack": ["Bootstrap"],
     "note": "",
@@ -421,7 +421,7 @@
   },
   {
     "title": "Rahul Dutta / Portfolio",
-    "filter": ["html-css-js"],
+    "filter": ["javascript", "css", "html"],
     "preview": "https://i.postimg.cc/J0DmDXHh/rahuldutta-portfolio.gif",
     "techStack": ["HTML", "CSS", "JS"],
     "note": "",
