@@ -1,5 +1,15 @@
 [
   {
+    "title": "Animated Countdown",
+    "filter": ["javascript", "css", "html"],
+    "preview": "https://i.postimg.cc/cLfMYD31/output.gif",
+    "techStack": ["HTML", "CSS", "JS"],
+    "note": "JS: DOM, EventListener<br/>CSS: KeyFrames, Animation",
+    "livePreview": "https://irahuldutta02.github.io/html-css-js-only-projects/034-animated-countdown/",
+    "code": "https://github.com/irahuldutta02/html-css-js-only-projects/tree/main/034-animated-countdown/",
+    "download": "https://minhaskamal.github.io/DownGit/#/home?url=https://github.com/irahuldutta02/html-css-js-only-projects/tree/main/034-animated-countdown/"
+  },
+  {
     "title": "Notes App",
     "filter": ["javascript", "css", "html"],
     "preview": "https://i.postimg.cc/htkBSkKy/output.gif",
