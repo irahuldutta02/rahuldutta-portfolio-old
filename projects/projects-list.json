@@ -1,5 +1,15 @@
 [
   {
+    "title": "Hoverboard",
+    "filter": ["javascript", "css", "html"],
+    "preview": "https://i.postimg.cc/dVxPJKgJ/output.gif",
+    "techStack": ["HTML", "CSS", "JS"],
+    "note": "JS: DOM, EventListener",
+    "livePreview": "https://irahuldutta02.github.io/html-css-js-only-projects/036-hoverboard/",
+    "code": "https://github.com/irahuldutta02/html-css-js-only-projects/tree/main/036-hoverboard/",
+    "download": "https://minhaskamal.github.io/DownGit/#/home?url=https://github.com/irahuldutta02/html-css-js-only-projects/tree/main/036-hoverboard/"
+  },
+  {
     "title": "Image Carousel",
     "filter": ["javascript", "css", "html"],
     "preview": "https://i.postimg.cc/3xs6tbx4/output.gif",
