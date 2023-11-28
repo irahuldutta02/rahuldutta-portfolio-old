@@ -307,6 +307,10 @@ section .title::after {
   gap: 1rem;
 }
 
+.home-button-div i {
+  font-size: 1.5rem;
+}
+
 .home .home-content .home-button {
   display: flex;
   gap: 0.5rem;
