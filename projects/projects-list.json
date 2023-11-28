@@ -1,5 +1,15 @@
 [
   {
+    "title": "Pokedex",
+    "filter": ["javascript", "css", "html"],
+    "preview": "https://i.postimg.cc/3R7H97GF/output.gif",
+    "techStack": ["HTML", "CSS", "JS"],
+    "note": "JS: DOM, EventListener, Fetch, Async-Await, Api Handling</br>CSS: Grid, Flex, Position",
+    "livePreview": "https://irahuldutta02.github.io/html-css-js-only-projects/037-pokedex/",
+    "code": "https://github.com/irahuldutta02/html-css-js-only-projects/tree/main/037-pokedex/",
+    "download": "https://minhaskamal.github.io/DownGit/#/home?url=https://github.com/irahuldutta02/html-css-js-only-projects/tree/main/037-pokedex/"
+  },
+  {
     "title": "Hoverboard",
     "filter": ["javascript", "css", "html"],
     "preview": "https://i.postimg.cc/dVxPJKgJ/output.gif",
