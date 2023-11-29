@@ -1,5 +1,15 @@
 [
   {
+    "title": "Mobile Tab Navigation",
+    "filter": ["javascript", "css", "html"],
+    "preview": "https://i.postimg.cc/nhBJ3yGH/output.gif",
+    "techStack": ["HTML", "CSS", "JS"],
+    "note": "JS: DOM, EventListener",
+    "livePreview": "https://irahuldutta02.github.io/html-css-js-only-projects/038-mobile-tab-navigation/",
+    "code": "https://github.com/irahuldutta02/html-css-js-only-projects/tree/main/038-mobile-tab-navigation/",
+    "download": "https://minhaskamal.github.io/DownGit/#/home?url=https://github.com/irahuldutta02/html-css-js-only-projects/tree/main/038-mobile-tab-navigation/"
+  },
+  {
     "title": "Pokedex",
     "filter": ["javascript", "css", "html"],
     "preview": "https://i.postimg.cc/3R7H97GF/output.gif",
