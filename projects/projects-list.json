@@ -1,5 +1,15 @@
 [
   {
+    "title": "Password Strength Background",
+    "filter": ["javascript", "css", "html", "tailwind"],
+    "preview": "https://i.postimg.cc/525636SL/output.gif",
+    "techStack": ["HTML", "CSS", "JS", "Tailwind CSS"],
+    "note": "JS: DOM, EventListener",
+    "livePreview": "https://irahuldutta02.github.io/html-css-js-only-projects/039-password-strength-background/",
+    "code": "https://github.com/irahuldutta02/html-css-js-only-projects/tree/main/039-password-strength-background/",
+    "download": "https://minhaskamal.github.io/DownGit/#/home?url=https://github.com/irahuldutta02/html-css-js-only-projects/tree/main/039-password-strength-background/"
+  },
+  {
     "title": "Mobile Tab Navigation",
     "filter": ["javascript", "css", "html"],
     "preview": "https://i.postimg.cc/nhBJ3yGH/output.gif",
