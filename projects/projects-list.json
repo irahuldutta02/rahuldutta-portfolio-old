@@ -2,8 +2,8 @@
   {
     "title": "3D Background Boxes", 
     "filter": ["javascript", "css", "html"],
-    "preview": "https://i.postimg.cc/525636SL/output.gif",
-    "techStack": ["HTML", "CSS", "JS", "Tailwind CSS"],
+    "preview": "https://i.postimg.cc/pLvb3qty/output.gif",
+    "techStack": ["HTML", "CSS", "JS"],
     "note": "JS: DOM, EventListener",
     "livePreview": "https://irahuldutta02.github.io/html-css-js-only-projects/040-3d-background-boxes/",
     "code": "https://github.com/irahuldutta02/html-css-js-only-projects/tree/main/040-3d-background-boxes/",
