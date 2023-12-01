@@ -1,5 +1,15 @@
 [
   {
+    "title": "3D Background Boxes", 
+    "filter": ["javascript", "css", "html"],
+    "preview": "https://i.postimg.cc/525636SL/output.gif",
+    "techStack": ["HTML", "CSS", "JS", "Tailwind CSS"],
+    "note": "JS: DOM, EventListener",
+    "livePreview": "https://irahuldutta02.github.io/html-css-js-only-projects/040-3d-background-boxes/",
+    "code": "https://github.com/irahuldutta02/html-css-js-only-projects/tree/main/040-3d-background-boxes/",
+    "download": "https://minhaskamal.github.io/DownGit/#/home?url=https://github.com/irahuldutta02/html-css-js-only-projects/tree/main/040-3d-background-boxes/"
+  },
+  {
     "title": "Password Strength Background",
     "filter": ["javascript", "css", "html", "tailwind"],
     "preview": "https://i.postimg.cc/525636SL/output.gif",
