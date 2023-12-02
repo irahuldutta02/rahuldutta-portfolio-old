@@ -1,5 +1,15 @@
 [
   {
+    "title": "Verify Your Account", 
+    "filter": ["javascript", "css", "html"],
+    "preview": "https://i.postimg.cc/76BBh6Fp/output.gif",
+    "techStack": ["HTML", "CSS", "JS"],
+    "note": "JS: DOM, EventListener",
+    "livePreview": "https://irahuldutta02.github.io/html-css-js-only-projects/041-verify-account-ui/",
+    "code": "https://github.com/irahuldutta02/html-css-js-only-projects/tree/main/041-verify-account-ui/",
+    "download": "https://minhaskamal.github.io/DownGit/#/home?url=https://github.com/irahuldutta02/html-css-js-only-projects/tree/main/041-verify-account-ui/"
+  },
+  {
     "title": "3D Background Boxes", 
     "filter": ["javascript", "css", "html"],
     "preview": "https://i.postimg.cc/pLvb3qty/output.gif",
