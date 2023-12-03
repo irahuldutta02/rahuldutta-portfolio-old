@@ -1,5 +1,15 @@
 [
   {
+    "title": "Live User Filter", 
+    "filter": ["javascript", "css", "html"],
+    "preview": "https://i.postimg.cc/pTKc5SFg/output.gif",
+    "techStack": ["HTML", "CSS", "JS"],
+    "note": "JS: DOM, EventListener, fetch, async, await",
+    "livePreview": "https://irahuldutta02.github.io/html-css-js-only-projects/042-live-user-filter/",
+    "code": "https://github.com/irahuldutta02/html-css-js-only-projects/tree/main/042-live-user-filter/",
+    "download": "https://minhaskamal.github.io/DownGit/#/home?url=https://github.com/irahuldutta02/html-css-js-only-projects/tree/main/042-live-user-filter/"
+  },
+  {
     "title": "Verify Your Account", 
     "filter": ["javascript", "css", "html"],
     "preview": "https://i.postimg.cc/76BBh6Fp/output.gif",
