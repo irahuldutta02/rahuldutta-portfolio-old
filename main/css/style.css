@@ -67,15 +67,6 @@ section {
   margin: auto;
 }
 
-#about,
-#services,
-#skills,
-#background,
-#contact {
-  padding-top: 150px;
-}
-
-
 .about .about-content,
 .services .serv-content,
 .skills .skills-content,
@@ -257,8 +248,8 @@ section .title::after {
   /* font-family: "Capriola", sans-serif; */
 
   /* background */
-  background: url("https://i.postimg.cc/J4nzSZcj/background-01.webp") no-repeat
-    center;
+  background: url("https://ik.imagekit.io/irahuldutta02/rahuldutta-portfolio/background-01.webp")
+    no-repeat center;
 
   background-repeat: no-repeat;
   background-size: cover;
@@ -386,7 +377,7 @@ section .title::after {
 .about-social-icons a {
   height: 50px;
   width: 50px;
-  border-radius: 50%;
+  border-radius: 10px;
   transition: all 0.3s ease;
   box-shadow: rgba(0, 0, 0, 0.5) 3px 3px 0px;
 }
@@ -427,7 +418,7 @@ section .title::after {
   color: #fff;
   background: var(--color-2);
 }
-.services .serv-content{
+.services .serv-content {
   gap: 1rem;
 }
 
@@ -515,16 +506,15 @@ section .title::after {
   padding: 10px;
 }
 
-.skills .skills-content .column .inside-coloum {
+.skills .skills-content .inside-coloum {
   display: flex;
   justify-content: center;
   align-items: center;
   flex-wrap: wrap;
   gap: 1rem;
-  padding-top: 1rem;
 }
 
-.skills .skills-content .column .inside-coloum div {
+.skills .skills-content .inside-coloum div {
   display: flex;
   justify-content: center;
   align-items: center;
@@ -537,25 +527,35 @@ section .title::after {
   border: 2px solid var(--color);
   transition: all 0.3s ease;
   width: 150px;
-  height: 30px;
+  height: 32px;
   box-shadow: rgba(0, 0, 0, 0.5) 5px 5px 0px;
 }
 
-.skills .skills-content .column .inside-coloum div:hover {
+.skills .skills-content .inside-coloum div:hover {
   color: var(--color);
   background: none;
   cursor: pointer;
   transform: scale(1.05);
 }
 
-.skills .skills-content .column .inside-coloum div span {
-  display: flex;
+.skills .skills-content .inside-coloum div span {
+  display: inline-flex;
   justify-content: center;
   align-items: center;
+  line-height: 25px;
+}
+.skills .skills-content .inside-coloum div .icon {
+  height: 25px;
+  width: 25px;
+  padding: 2px;
+  background-color: white;
+  border-radius: 30%;
 }
 
-.skills .skills-content .column .inside-coloum div span img {
-  height: 20px;
+.skills .skills-content .inside-coloum div .icon img {
+  border-radius: 10%;
+  height: 100%;
+  width: 100%;
 }
 
 /* background section styling */
