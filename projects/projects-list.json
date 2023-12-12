@@ -1,5 +1,45 @@
 [
   {
+    "title": "Space Shooter Game", 
+    "filter": ["javascript", "css", "html"],
+    "preview": "https://ik.imagekit.io/irahuldutta02/rahuldutta-projects/space-shooter-game-output-image.png",
+    "techStack": ["HTML", "CSS", "JS"],
+    "note": "JS: DOM, EventListener, setTimeout, setInterval, <br>(Not for smaller Screen)",
+    "livePreview": "https://irahuldutta02.github.io/javascript-projects-01/space-shooter-game",
+    "code": "https://github.com/irahuldutta02/javascript-projects-01/tree/main/space-shooter-game",
+    "download": "https://minhaskamal.github.io/DownGit/#/home?url=https://github.com/irahuldutta02/javascript-projects-01/tree/main/space-shooter-game"
+  },
+  {
+    "title": "Snake Game", 
+    "filter": ["javascript", "css", "html"],
+    "preview": "https://ik.imagekit.io/irahuldutta02/rahuldutta-projects/sanek-game-output-image.png",
+    "techStack": ["HTML", "CSS", "JS"],
+    "note": "JS: DOM, EventListener, setTimeout, setInterval",
+    "livePreview": "https://irahuldutta02.github.io/javascript-projects-01/snake-game",
+    "code": "https://github.com/irahuldutta02/javascript-projects-01/tree/main/snake-game",
+    "download": "https://minhaskamal.github.io/DownGit/#/home?url=https://github.com/irahuldutta02/javascript-projects-01/tree/main/snake-game"
+  },
+  {
+    "title": "ToDo App", 
+    "filter": ["javascript", "css", "bootstrap", "html"],
+    "preview": "https://ik.imagekit.io/irahuldutta02/rahuldutta-projects/to-do-app-output-01.gif",
+    "techStack": ["HTML", "CSS", "Bootstrap", "JS"],
+    "note": "JS: DOM, EventListener <br>(Not for smaller Screen)",
+    "livePreview": "https://irahuldutta02.github.io/javascript-projects-01/07-todo-app",
+    "code": "https://github.com/irahuldutta02/javascript-projects-01/tree/main/07-todo-app",
+    "download": "https://minhaskamal.github.io/DownGit/#/home?url=https://github.com/irahuldutta02/javascript-projects-01/tree/main/07-todo-app"
+  },
+  {
+    "title": "Ping Pong Game", 
+    "filter": ["javascript", "css", "html"],
+    "preview": "https://ik.imagekit.io/irahuldutta02/rahuldutta-projects/ping-pong-game-output.gif",
+    "techStack": ["HTML", "CSS", "JS"],
+    "note": "JS: DOM, EventListener, SetInterval <br>(Not for smaller Screen)",
+    "livePreview": "https://irahuldutta02.github.io/javascript-projects-01/06-ping-pong-game",
+    "code": "https://github.com/irahuldutta02/javascript-projects-01/tree/main/06-ping-pong-game",
+    "download": "https://minhaskamal.github.io/DownGit/#/home?url=https://github.com/irahuldutta02/javascript-projects-01/tree/main/06-ping-pong-game"
+  },
+  {
     "title": "Live User Filter", 
     "filter": ["javascript", "css", "html"],
     "preview": "https://i.postimg.cc/pTKc5SFg/output.gif",
@@ -480,7 +520,7 @@
     "download": "https://minhaskamal.github.io/DownGit/#/home?url=https://github.com/irahuldutta02/web-dev-projects-01/tree/main/calculator-01"
   },
   {
-    "title": "TO DO LIST",
+    "title": "ToDo List App",
     "filter": ["javascript", "css", "html"],
     "preview": "https://i.postimg.cc/L8ZYKqy2/to-do-list.gif",
     "techStack": ["HTML", "CSS", "JS"],
