@@ -1,8 +1,88 @@
 [
   {
+    "title": "Insect Catch Game", 
+    "filter": ["javascript", "css", "html"],
+    "preview": "https://i.postimg.cc/nLyZKxdv/output.png",
+    "techStack": ["HTML", "CSS", "JS"],
+    "note": "JS: DOM, EventListener",
+    "livePreview": "https://irahuldutta02.github.io/html-css-js-only-projects/050-insect-catch-game/",
+    "code": "https://github.com/irahuldutta02/html-css-js-only-projects/tree/main/050-insect-catch-game/",
+    "download": "https://minhaskamal.github.io/DownGit/#/home?url=https://github.com/irahuldutta02/html-css-js-only-projects/tree/main/050-insect-catch-game/"
+  },
+  {
+    "title": "ToDo List", 
+    "filter": ["javascript", "css", "html"],
+    "preview": "https://i.postimg.cc/h4xRBN2Y/output.png",
+    "techStack": ["HTML", "CSS", "JS"],
+    "note": "JS: DOM, EventListener",
+    "livePreview": "https://irahuldutta02.github.io/html-css-js-only-projects/049-todo-list/",
+    "code": "https://github.com/irahuldutta02/html-css-js-only-projects/tree/main/049-todo-list/",
+    "download": "https://minhaskamal.github.io/DownGit/#/home?url=https://github.com/irahuldutta02/html-css-js-only-projects/tree/main/049-todo-list/"
+  },
+  {
+    "title": "Random Image Generator", 
+    "filter": ["javascript", "css", "html"],
+    "preview": "https://i.postimg.cc/8CCZzrN5/output.png",
+    "techStack": ["HTML", "CSS", "JS"],
+    "note": "JS: DOM, EventListener",
+    "livePreview": "https://irahuldutta02.github.io/html-css-js-only-projects/048-random-image-generator/",
+    "code": "https://github.com/irahuldutta02/html-css-js-only-projects/tree/main/048-random-image-generator/",
+    "download": "https://minhaskamal.github.io/DownGit/#/home?url=https://github.com/irahuldutta02/html-css-js-only-projects/tree/main/048-random-image-generator/"
+  },
+  {
+    "title": "Testimonial Box Switcher", 
+    "filter": ["javascript", "css", "html"],
+    "preview": "https://i.postimg.cc/Wb3LxtJ2/output.png",
+    "techStack": ["HTML", "CSS", "JS"],
+    "note": "JS: DOM, EventListener",
+    "livePreview": "https://irahuldutta02.github.io/html-css-js-only-projects/047-testimonial-box-switcher/",
+    "code": "https://github.com/irahuldutta02/html-css-js-only-projects/tree/main/047-testimonial-box-switcher/",
+    "download": "https://minhaskamal.github.io/DownGit/#/home?url=https://github.com/irahuldutta02/html-css-js-only-projects/tree/main/047-testimonial-box-switcher/"
+  },
+  {
+    "title": "Quiz App", 
+    "filter": ["javascript", "css", "html"],
+    "preview": "https://i.postimg.cc/FzH1JmCh/output.png",
+    "techStack": ["HTML", "CSS", "JS"],
+    "note": "JS: DOM, EventListener",
+    "livePreview": "https://irahuldutta02.github.io/html-css-js-only-projects/046-quiz-app/",
+    "code": "https://github.com/irahuldutta02/html-css-js-only-projects/tree/main/046-quiz-app/",
+    "download": "https://minhaskamal.github.io/DownGit/#/home?url=https://github.com/irahuldutta02/html-css-js-only-projects/tree/main/046-quiz-app/"
+  },
+  {
+    "title": "Netflix Mobile Navigation", 
+    "filter": ["javascript", "css", "html"],
+    "preview": "https://i.postimg.cc/jdy4h4Zm/output.png",
+    "techStack": ["HTML", "CSS", "JS"],
+    "note": "CSS: Transition Transform<br>JS: DOM, EventListener",
+    "livePreview": "https://irahuldutta02.github.io/html-css-js-only-projects/045-netflix-mobile-navigation/",
+    "code": "https://github.com/irahuldutta02/html-css-js-only-projects/tree/main/045-netflix-mobile-navigation/",
+    "download": "https://minhaskamal.github.io/DownGit/#/home?url=https://github.com/irahuldutta02/html-css-js-only-projects/tree/main/045-netflix-mobile-navigation/"
+  },
+  {
+    "title": "Custom Range Slider", 
+    "filter": ["javascript", "css", "html"],
+    "preview": "https://i.postimg.cc/qMT8gdQC/output.png",
+    "techStack": ["HTML", "CSS", "JS"],
+    "note": "JS: DOM, EventListener",
+    "livePreview": "https://irahuldutta02.github.io/html-css-js-only-projects/044-custom-range-slider/",
+    "code": "https://github.com/irahuldutta02/html-css-js-only-projects/tree/main/044-custom-range-slider/",
+    "download": "https://minhaskamal.github.io/DownGit/#/home?url=https://github.com/irahuldutta02/html-css-js-only-projects/tree/main/044-custom-range-slider/"
+  },
+  {
+    "title": "Feedback UI Design", 
+    "filter": ["javascript", "css", "html"],
+    "preview": "https://i.postimg.cc/YCZd0sPG/output.png",
+    "techStack": ["HTML", "CSS", "JS"],
+    "note": "JS: DOM, EventListener",
+    "livePreview": "https://irahuldutta02.github.io/html-css-js-only-projects/043-feedback-ui-design/",
+    "code": "https://github.com/irahuldutta02/html-css-js-only-projects/tree/main/043-feedback-ui-design/",
+    "download": "https://minhaskamal.github.io/DownGit/#/home?url=https://github.com/irahuldutta02/html-css-js-only-projects/tree/main/043-feedback-ui-design/"
+  },
+  {
     "title": "Space Shooter Game", 
     "filter": ["javascript", "css", "html"],
-    "preview": "https://ik.imagekit.io/irahuldutta02/rahuldutta-projects/space-shooter-game-output-image.png",
+    "preview": "https://i.postimg.cc/4NdNdRJf/sace-shooter-game-output-image.png",
     "techStack": ["HTML", "CSS", "JS"],
     "note": "JS: DOM, EventListener, setTimeout, setInterval, <br>(Not for smaller Screen)",
     "livePreview": "https://irahuldutta02.github.io/javascript-projects-01/space-shooter-game",
@@ -12,7 +92,7 @@
   {
     "title": "Snake Game", 
     "filter": ["javascript", "css", "html"],
-    "preview": "https://ik.imagekit.io/irahuldutta02/rahuldutta-projects/sanek-game-output-image.png",
+    "preview": "https://i.postimg.cc/C5DCnrTJ/output.png",
     "techStack": ["HTML", "CSS", "JS"],
     "note": "JS: DOM, EventListener, setTimeout, setInterval",
     "livePreview": "https://irahuldutta02.github.io/javascript-projects-01/snake-game",
@@ -22,7 +102,7 @@
   {
     "title": "ToDo App", 
     "filter": ["javascript", "css", "bootstrap", "html"],
-    "preview": "https://ik.imagekit.io/irahuldutta02/rahuldutta-projects/to-do-app-output-01.gif",
+    "preview": "https://i.postimg.cc/Jzkw4Zhq/output.gif",
     "techStack": ["HTML", "CSS", "Bootstrap", "JS"],
     "note": "JS: DOM, EventListener <br>(Not for smaller Screen)",
     "livePreview": "https://irahuldutta02.github.io/javascript-projects-01/07-todo-app",
@@ -32,7 +112,7 @@
   {
     "title": "Ping Pong Game", 
     "filter": ["javascript", "css", "html"],
-    "preview": "https://ik.imagekit.io/irahuldutta02/rahuldutta-projects/ping-pong-game-output.gif",
+    "preview": "https://i.postimg.cc/fT7m4gcj/ping-pong-game-output.gif",
     "techStack": ["HTML", "CSS", "JS"],
     "note": "JS: DOM, EventListener, SetInterval <br>(Not for smaller Screen)",
     "livePreview": "https://irahuldutta02.github.io/javascript-projects-01/06-ping-pong-game",
