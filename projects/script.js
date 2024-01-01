@@ -24,6 +24,7 @@ async function getProjects() {
   appendProjectsToContainer(projectsContainer, data);
 
   updateFilterBadgeCounts(data);
+
 }
 
 //calling the getProjects function
@@ -135,6 +136,53 @@ function createProjectCardHTML(project) {
   `;
   }
 
+  // for projects with video preview
+  if (project.videoPreview && project.videoPreview !== "") {
+    const filterClasses = project.filter
+      .map((filter) => `filter-${filter.toLowerCase()}`)
+      .join(" ");
+    return `
+    <div class="project__item ${filterClasses}">
+      <div class="project__preview">
+        <video class="project__video" muted autoplay loop poster="${
+          project.thumbnail ? project.thumbnail : ""
+        }">
+          <source src="${project.videoPreview}" type="video/mp4">
+          Your browser does not support the video tag.
+        </video>
+      </div>
+      <div class="project__details">
+        <div class="project__head">
+          <div class="project__title">
+            <h2>${project.title}</h2>
+          </div>
+          <div class="project__tech__stacks">
+            Using: ${project.techStack
+              .map(
+                (tech) => `<span class="project__tech__stack">${tech}</span> `
+              )
+              .join("")}
+          </div>
+          <div class="project__notes">
+            <p>${project.note}</p>
+          </div>
+        </div>
+        <div class="project__btns">
+          <a target="_blank" href="${project.livePreview}" class="project__btn">
+            <i class="fa-solid fa-link"></i>
+          </a>
+          <a target="_blank" href="${project.code}" class="project__btn">
+            <i class="fa-brands fa-github"></i>
+          </a>
+          <a target="_blank" href="${project.download}" class="project__btn">
+            <i class="fa-solid fa-download"></i>
+          </a>
+        </div>
+      </div>
+    </div>
+  `;
+  }
+
   // for every other projects
   const filterClasses = project.filter
     .map((filter) => `filter-${filter.toLowerCase()}`)
@@ -203,6 +251,24 @@ function appendProjectsToContainer(container, projects) {
       return html;
     })
     .join("");
+
+  playVideoFunction();
+}
+
+// video play function
+function playVideoFunction() {
+  const video = document.querySelectorAll(".project__video");
+
+  video.forEach((vid) => {
+    vid.addEventListener("mouseover", (event) => {
+      event.target.style.cursor = "pointer";
+      event.target.controls = true;
+    });
+    vid.addEventListener("mouseout", (event) => {
+      event.target.style.cursor = "default";
+      event.target.controls = false;
+    });
+  });
 }
 
 // Function to count projects for each filter and update badge elements
@@ -310,3 +376,5 @@ function filterProjects(event) {
     }, 0);
   }
 }
+
+

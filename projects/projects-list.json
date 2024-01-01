@@ -1,5 +1,25 @@
 [
   {
+    "title": "Tic Tac Toe Game React", 
+    "filter": ["react"],
+    "videoPreview": "https://github.com/irahuldutta02/tic-tac-toe-react/assets/78687135/14684bda-51ce-4212-b0d1-797a239fbb86",
+    "techStack": ["React"],
+    "note": "",
+    "livePreview": "https://tic-tac-toe-react-rdtech2002.vercel.app/",
+    "code": "https://github.com/irahuldutta02/tic-tac-toe-react",
+    "download": "https://minhaskamal.github.io/DownGit/#/home?url=https://github.com/irahuldutta02/tic-tac-toe-react"
+  },
+  {
+    "title": "Simple React ToDo App", 
+    "filter": ["react"],
+    "videoPreview": "https://github.com/irahuldutta02/simple-react-todo-app/assets/78687135/1391de30-544f-40dc-a007-40c176942c87",
+    "techStack": ["React"],
+    "note": "",
+    "livePreview": "https://simple-react-todo-app-rdtech2002.vercel.app/",
+    "code": "https://github.com/irahuldutta02/simple-react-todo-app",
+    "download": "https://minhaskamal.github.io/DownGit/#/home?url=https://github.com/irahuldutta02/simple-react-todo-app"
+  },
+  {
     "title": "Insect Catch Game", 
     "filter": ["javascript", "css", "html"],
     "preview": "https://i.postimg.cc/nLyZKxdv/output.png",
