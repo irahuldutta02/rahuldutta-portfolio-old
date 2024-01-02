@@ -100,8 +100,11 @@ nav a {
   position: relative;
 }
 
-.filters li.active,
 .filters li:hover {
+  box-shadow: 3px 3px 0px rgba(0, 0, 0, 0.7);
+}
+
+.filters li.active {
   color: white;
   background-color: #fa8231;
   box-shadow: 3px 3px 0px rgba(0, 0, 0, 0.7);
