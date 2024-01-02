@@ -6,7 +6,9 @@ const filterItemsContainer = document.querySelector(".filter-items");
 searchInput.addEventListener("input", searchProjects);
 filterItemsContainer.addEventListener("click", filterProjects);
 
-// Fetch data from projects.json using fetch
+/**
+ * Fetch data from projects.json using fetch
+ */
 async function getProjects() {
   const response = await fetch("projects-list.json");
   const data = await response.json();
@@ -24,20 +26,23 @@ async function getProjects() {
   appendProjectsToContainer(projectsContainer, data);
 
   updateFilterBadgeCounts(data);
-
 }
 
-//calling the getProjects function
+// Call getProjects function
 getProjects();
 
-// calling the setProjectCount function
-// every 0ms, every 500ms after the page loads
+/**
+ * calling the setProjectCount function
+ * every 0ms, every 500ms after the page loads
+ */
 setTimeout(() => {
   setProjectCount();
   setInterval(setProjectCount, 0);
 }, 500);
 
-// faction to get the project count at any point of time
+/**
+ * Function to set the project count
+ */
 function setProjectCount() {
   const projects = document.querySelectorAll(".project__item");
   const projectCountElement = document.querySelector(".project__count");
@@ -51,6 +56,10 @@ function setProjectCount() {
   if (projectCount == 0) {
     projectCountElement.style.color = "red";
     projectCountElement.textContent = `No projects found`;
+    const techStack = document.querySelector(".tech-stack");
+    if (techStack) {
+      techStack.style.color = "black";
+    }
   } else {
     projectCountElement.style.color = "black";
     projectCountElement.textContent = `${projectCount} projects found`;
@@ -59,7 +68,11 @@ function setProjectCount() {
   projectCountElement.style.display = "inline-block";
 }
 
-// Function to create a project card HTML string
+/**
+ * Function to create a project card HTML string
+ * @param {*} project
+ * @returns
+ */
 function createProjectCardHTML(project) {
   // for ui-ux projects
   if (project.filter.includes("ui-ux")) {
@@ -224,7 +237,12 @@ function createProjectCardHTML(project) {
   `;
 }
 
-// Function to create filter items based on available filters
+/**
+ * Function to create filter items based on available filters
+ * @param {*} filters
+ * @param {*} latestFilter
+ * @returns
+ */
 function createFilterItems(filters, latestFilter) {
   // Add "All" filter option
   const filterItems = ["all", ...filters];
@@ -243,7 +261,11 @@ function createFilterItems(filters, latestFilter) {
     .join("");
 }
 
-// Function to append project cards to the projects container
+/**
+ * Function to append project cards to the projects container
+ * @param {*} container
+ * @param {*} projects
+ */
 function appendProjectsToContainer(container, projects) {
   container.innerHTML = projects
     .map((project) => {
@@ -255,7 +277,9 @@ function appendProjectsToContainer(container, projects) {
   playVideoFunction();
 }
 
-// video play function
+/**
+ * video play function
+ */
 function playVideoFunction() {
   const video = document.querySelectorAll(".project__video");
 
@@ -271,7 +295,10 @@ function playVideoFunction() {
   });
 }
 
-// Function to count projects for each filter and update badge elements
+/**
+ * Function to count projects for each filter and update badge elements
+ * @param {*} projects
+ */
 function updateFilterBadgeCounts(projects) {
   const allFilters = document.querySelectorAll(".filter-item");
   const filterCounts = {};
@@ -295,7 +322,9 @@ function updateFilterBadgeCounts(projects) {
   }
 }
 
-// Function to update projects based on search input
+/**
+ * Function to update projects based on search input
+ */
 function searchProjects() {
   const filterAllBtn = document.querySelector(".filter-all");
   filterAllBtn.click();
@@ -315,7 +344,11 @@ function searchProjects() {
   });
 }
 
-// Function to update projects based on selected filter
+/**
+ * Function to update projects based on selected filter
+ * @param {*} event
+ * @returns
+ */
 function filterProjects(event) {
   if (!event.target.closest(".filter-item")) return;
   const filterItem = event.target.closest(".filter-item");
@@ -338,6 +371,12 @@ function filterProjects(event) {
     filterAllBtn.classList.remove("active");
     filterItem.classList.toggle("active");
     const activeFilterItems = document.querySelectorAll(".filter-item.active");
+
+    if (activeFilterItems.length == 0) {
+      filterAllBtn.classList.add("active");
+      filterAllBtn.click();
+      return;
+    }
 
     const activeFilters = [];
     activeFilterItems.forEach((activeFilterItem) => {
@@ -367,7 +406,11 @@ function filterProjects(event) {
     const filterMessage = document.querySelector(".filter__message");
     filterMessage.style.display = "inline-block";
     const activeFiltersNameString = activeFiltersName.join(", ");
-    filterMessage.innerHTML = `&nbsp Using ${activeFiltersNameString}`;
+    filterMessage.innerHTML = `&nbsp Using <span class="tech-stack" >${activeFiltersNameString}</span>`;
+
+    const techStack = document.querySelector(".tech-stack");
+
+    techStack.style.color = "#ff5733";
 
     setInterval(() => {
       const projectCountMessageColor =
@@ -376,5 +419,3 @@ function filterProjects(event) {
     }, 0);
   }
 }
-
-
