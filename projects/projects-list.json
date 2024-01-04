@@ -1,6 +1,17 @@
 [
   {
-    "title": "Tic Tac Toe Game React", 
+    "title": "Twitter Functionality Clone",
+    "filter": ["react"],
+    "videoPreview": "https://github.com/irahuldutta02/twitter-functionality-clone-react/assets/78687135/b1313cff-8fe7-4c39-ad51-83cf2467b3dd",
+    "techStack": ["React"],
+    "thumbnail": "https://i.postimg.cc/QNTgfBqC/output.jpg",
+    "note": "",
+    "livePreview": "https://twitter-functionality-clone-react.vercel.app/",
+    "code": "https://github.com/irahuldutta02/twitter-functionality-clone-react",
+    "download": "https://minhaskamal.github.io/DownGit/#/home?url=https://github.com/irahuldutta02/twitter-functionality-clone-react"
+  },
+  {
+    "title": "Tic Tac Toe Game React",
     "filter": ["react"],
     "videoPreview": "https://github.com/irahuldutta02/tic-tac-toe-react/assets/78687135/14684bda-51ce-4212-b0d1-797a239fbb86",
     "techStack": ["React"],
@@ -11,7 +22,7 @@
     "download": "https://minhaskamal.github.io/DownGit/#/home?url=https://github.com/irahuldutta02/tic-tac-toe-react"
   },
   {
-    "title": "Simple React ToDo App", 
+    "title": "Simple React ToDo App",
     "filter": ["react"],
     "videoPreview": "https://github.com/irahuldutta02/simple-react-todo-app/assets/78687135/1391de30-544f-40dc-a007-40c176942c87",
     "techStack": ["React"],
@@ -22,7 +33,7 @@
     "download": "https://minhaskamal.github.io/DownGit/#/home?url=https://github.com/irahuldutta02/simple-react-todo-app"
   },
   {
-    "title": "Insect Catch Game", 
+    "title": "Insect Catch Game",
     "filter": ["javascript", "css", "html"],
     "preview": "https://i.postimg.cc/nLyZKxdv/output.png",
     "techStack": ["HTML", "CSS", "JS"],
@@ -32,7 +43,7 @@
     "download": "https://minhaskamal.github.io/DownGit/#/home?url=https://github.com/irahuldutta02/html-css-js-only-projects/tree/main/050-insect-catch-game/"
   },
   {
-    "title": "ToDo List", 
+    "title": "ToDo List",
     "filter": ["javascript", "css", "html"],
     "preview": "https://i.postimg.cc/h4xRBN2Y/output.png",
     "techStack": ["HTML", "CSS", "JS"],
@@ -42,7 +53,7 @@
     "download": "https://minhaskamal.github.io/DownGit/#/home?url=https://github.com/irahuldutta02/html-css-js-only-projects/tree/main/049-todo-list/"
   },
   {
-    "title": "Random Image Generator", 
+    "title": "Random Image Generator",
     "filter": ["javascript", "css", "html"],
     "preview": "https://i.postimg.cc/8CCZzrN5/output.png",
     "techStack": ["HTML", "CSS", "JS"],
@@ -52,7 +63,7 @@
     "download": "https://minhaskamal.github.io/DownGit/#/home?url=https://github.com/irahuldutta02/html-css-js-only-projects/tree/main/048-random-image-generator/"
   },
   {
-    "title": "Testimonial Box Switcher", 
+    "title": "Testimonial Box Switcher",
     "filter": ["javascript", "css", "html"],
     "preview": "https://i.postimg.cc/Wb3LxtJ2/output.png",
     "techStack": ["HTML", "CSS", "JS"],
@@ -62,7 +73,7 @@
     "download": "https://minhaskamal.github.io/DownGit/#/home?url=https://github.com/irahuldutta02/html-css-js-only-projects/tree/main/047-testimonial-box-switcher/"
   },
   {
-    "title": "Quiz App", 
+    "title": "Quiz App",
     "filter": ["javascript", "css", "html"],
     "preview": "https://i.postimg.cc/FzH1JmCh/output.png",
     "techStack": ["HTML", "CSS", "JS"],
@@ -72,7 +83,7 @@
     "download": "https://minhaskamal.github.io/DownGit/#/home?url=https://github.com/irahuldutta02/html-css-js-only-projects/tree/main/046-quiz-app/"
   },
   {
-    "title": "Netflix Mobile Navigation", 
+    "title": "Netflix Mobile Navigation",
     "filter": ["javascript", "css", "html"],
     "preview": "https://i.postimg.cc/jdy4h4Zm/output.png",
     "techStack": ["HTML", "CSS", "JS"],
@@ -82,7 +93,7 @@
     "download": "https://minhaskamal.github.io/DownGit/#/home?url=https://github.com/irahuldutta02/html-css-js-only-projects/tree/main/045-netflix-mobile-navigation/"
   },
   {
-    "title": "Custom Range Slider", 
+    "title": "Custom Range Slider",
     "filter": ["javascript", "css", "html"],
     "preview": "https://i.postimg.cc/qMT8gdQC/output.png",
     "techStack": ["HTML", "CSS", "JS"],
@@ -92,7 +103,7 @@
     "download": "https://minhaskamal.github.io/DownGit/#/home?url=https://github.com/irahuldutta02/html-css-js-only-projects/tree/main/044-custom-range-slider/"
   },
   {
-    "title": "Feedback UI Design", 
+    "title": "Feedback UI Design",
     "filter": ["javascript", "css", "html"],
     "preview": "https://i.postimg.cc/YCZd0sPG/output.png",
     "techStack": ["HTML", "CSS", "JS"],
@@ -102,7 +113,7 @@
     "download": "https://minhaskamal.github.io/DownGit/#/home?url=https://github.com/irahuldutta02/html-css-js-only-projects/tree/main/043-feedback-ui-design/"
   },
   {
-    "title": "Space Shooter Game", 
+    "title": "Space Shooter Game",
     "filter": ["javascript", "css", "html"],
     "preview": "https://i.postimg.cc/4NdNdRJf/sace-shooter-game-output-image.png",
     "techStack": ["HTML", "CSS", "JS"],
@@ -112,7 +123,7 @@
     "download": "https://minhaskamal.github.io/DownGit/#/home?url=https://github.com/irahuldutta02/javascript-projects-01/tree/main/space-shooter-game"
   },
   {
-    "title": "Snake Game", 
+    "title": "Snake Game",
     "filter": ["javascript", "css", "html"],
     "preview": "https://i.postimg.cc/C5DCnrTJ/output.png",
     "techStack": ["HTML", "CSS", "JS"],
@@ -122,7 +133,7 @@
     "download": "https://minhaskamal.github.io/DownGit/#/home?url=https://github.com/irahuldutta02/javascript-projects-01/tree/main/snake-game"
   },
   {
-    "title": "ToDo App", 
+    "title": "ToDo App",
     "filter": ["javascript", "css", "bootstrap", "html"],
     "preview": "https://i.postimg.cc/Jzkw4Zhq/output.gif",
     "techStack": ["HTML", "CSS", "Bootstrap", "JS"],
@@ -132,7 +143,7 @@
     "download": "https://minhaskamal.github.io/DownGit/#/home?url=https://github.com/irahuldutta02/javascript-projects-01/tree/main/07-todo-app"
   },
   {
-    "title": "Ping Pong Game", 
+    "title": "Ping Pong Game",
     "filter": ["javascript", "css", "html"],
     "preview": "https://i.postimg.cc/fT7m4gcj/ping-pong-game-output.gif",
     "techStack": ["HTML", "CSS", "JS"],
@@ -142,7 +153,7 @@
     "download": "https://minhaskamal.github.io/DownGit/#/home?url=https://github.com/irahuldutta02/javascript-projects-01/tree/main/06-ping-pong-game"
   },
   {
-    "title": "Live User Filter", 
+    "title": "Live User Filter",
     "filter": ["javascript", "css", "html"],
     "preview": "https://i.postimg.cc/pTKc5SFg/output.gif",
     "techStack": ["HTML", "CSS", "JS"],
@@ -152,7 +163,7 @@
     "download": "https://minhaskamal.github.io/DownGit/#/home?url=https://github.com/irahuldutta02/html-css-js-only-projects/tree/main/042-live-user-filter/"
   },
   {
-    "title": "Verify Your Account", 
+    "title": "Verify Your Account",
     "filter": ["javascript", "css", "html"],
     "preview": "https://i.postimg.cc/76BBh6Fp/output.gif",
     "techStack": ["HTML", "CSS", "JS"],
@@ -162,7 +173,7 @@
     "download": "https://minhaskamal.github.io/DownGit/#/home?url=https://github.com/irahuldutta02/html-css-js-only-projects/tree/main/041-verify-account-ui/"
   },
   {
-    "title": "3D Background Boxes", 
+    "title": "3D Background Boxes",
     "filter": ["javascript", "css", "html"],
     "preview": "https://i.postimg.cc/pLvb3qty/output.gif",
     "techStack": ["HTML", "CSS", "JS"],
