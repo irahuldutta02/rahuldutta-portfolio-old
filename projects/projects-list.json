@@ -85,7 +85,7 @@
   {
     "title": "Netflix Mobile Navigation",
     "filter": ["javascript", "css", "html"],
-    "preview": "https://i.postimg.cc/jdy4h4Zm/output.png",
+    "preview": "https://i.postimg.cc/Dwsrf35F/output.gif",
     "techStack": ["HTML", "CSS", "JS"],
     "note": "CSS: Transition Transform<br>JS: DOM, EventListener",
     "livePreview": "https://irahuldutta02.github.io/html-css-js-only-projects/045-netflix-mobile-navigation/",
