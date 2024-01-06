@@ -75,7 +75,7 @@
   {
     "title": "Quiz App",
     "filter": ["javascript", "css", "html"],
-    "preview": "https://i.postimg.cc/FzH1JmCh/output.png",
+    "preview": "https://i.postimg.cc/dQgDYP02/output.gif",
     "techStack": ["HTML", "CSS", "JS"],
     "note": "JS: DOM, EventListener",
     "livePreview": "https://irahuldutta02.github.io/html-css-js-only-projects/046-quiz-app/",
