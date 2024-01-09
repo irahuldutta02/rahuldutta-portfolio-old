@@ -55,7 +55,7 @@
   {
     "title": "Random Image Generator",
     "filter": ["javascript", "css", "html"],
-    "preview": "https://i.postimg.cc/8CCZzrN5/output.png",
+    "preview": "https://i.postimg.cc/Vs7SS4rM/output.gif",
     "techStack": ["HTML", "CSS", "JS"],
     "note": "JS: DOM, EventListener",
     "livePreview": "https://irahuldutta02.github.io/html-css-js-only-projects/048-random-image-generator/",
