@@ -1,5 +1,16 @@
 [
   {
+    "title": "Tic Tac Toe with moves history",
+    "filter": ["react", "tailwind"],
+    "videoPreview": "https://github.com/irahuldutta02/react-tic-tac-toe-game/assets/78687135/847be105-5904-473e-a38b-2e8d18fb3527",
+    "techStack": ["React", "Tailwind CSS"],
+    "thumbnail": "https://i.postimg.cc/dVg5VNY3/output.jpg",
+    "note": "",
+    "livePreview": "https://react-tic-tac-toe-game-with-history.vercel.app/",
+    "code": "https://github.com/irahuldutta02/twitter-functionality-clone-react",
+    "download": "https://minhaskamal.github.io/DownGit/#/home?url=https://github.com/irahuldutta02/react-tic-tac-toe-game"
+  },
+  {
     "title": "Twitter Functionality Clone",
     "filter": ["react"],
     "videoPreview": "https://github.com/irahuldutta02/twitter-functionality-clone-react/assets/78687135/b1313cff-8fe7-4c39-ad51-83cf2467b3dd",
