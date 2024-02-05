@@ -1,4 +1,5 @@
-# rahuldutta-portfolio
-My Portfolio Site : [rahuldutta.netlify.app](https://rahuldutta.netlify.app)
+# rahuldutta-portfolio-old 
 
-[![Netlify Status](https://api.netlify.com/api/v1/badges/b51cda4b-b275-4e47-9282-ca77bc07e1da/deploy-status)](https://rahuldutta.netlify.app)
+My Portfolio Site Moved here : [rahuldutta.netlify.app](https://rahuldutta.netlify.app)
+
+Repository Moved here : [github.com/irahuldutta02/rahuldutta-portfolio](https://github.com/irahuldutta02/rahuldutta-portfolio)
